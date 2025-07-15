@@ -1,0 +1,6 @@
+-------------
+-- USE THIS FILE TO EDIT THE CONFIGURATION OF THE SCRIPT
+-- CONFIG LOCATION : shared/config.lua
+-- Copy ONLY values you want edit, NOT ALL the config file
+-- Don't use `Config = {}` here
+-------------
