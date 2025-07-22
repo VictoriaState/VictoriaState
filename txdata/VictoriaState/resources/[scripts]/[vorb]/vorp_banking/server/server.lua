@@ -209,7 +209,8 @@ RegisterServerEvent('vorp_bank:depositcash', function(amount, bankName)
                 DiscordLogs(amount, bankName, playerCharacter.firstname .. ' ' .. playerCharacter.lastname, "deposit", "cash")
                 local newBalance = result[1].money + amount
                 MySQL.update("UPDATE bank_users SET money=@newBalance WHERE charidentifier=@characterId AND name = @bankName", { characterId = characterId, newBalance = newBalance, bankName = bankName })
-                VORPcore.NotifyRightTip(_source, T.youdepo .. amount, 4000)
+                --VORPcore.NotifyRightTip(_source, T.youdepo .. amount, 4000)
+                VORPcore.NotifyRightTip(_source, "Sie haben " .. amount .. " $ eingezahlt", 4000)
             end
         end)
     else
@@ -230,7 +231,8 @@ RegisterServerEvent('vorp_bank:depositgold', function(amount, bankName)
     if playerGold >= amount then
         playerCharacter.removeCurrency(1, amount)
         MySQL.update("UPDATE bank_users SET gold = gold + @amount WHERE charidentifier = @characterId AND name = @bankName", { characterId = characterId, amount = amount, bankName = bankName })
-        VORPcore.NotifyRightTip(_source, T.youdepog .. amount, 4000)
+        --VORPcore.NotifyRightTip(_source, T.youdepog .. amount, 4000)
+       VORPcore.NotifyRightTip(_source, "Sie haben " .. amount .. " Gold eingezahlt", 4000)
     else
         VORPcore.NotifyRightTip(_source, T.invalid, 4000)
     end
@@ -259,7 +261,8 @@ RegisterServerEvent('vorp_bank:withcash', function(amount, bankName)
                     lastMoney[_source] = bankBalance
                     Character.addCurrency(0, amount)
                     DiscordLogs(amount, bankName, playerFullName, "withdraw", "cash")
-                    VORPcore.NotifyRightTip(_source, T.withdrew .. amount, 4000)
+                   -- VORPcore.NotifyRightTip(_source, T.withdrew .. amount, 4000)
+                    VORPcore.NotifyRightTip(_source, "Sie haben " .. amount .. "$ abgehoben", 4000)
                 end
             else
                 VORPcore.NotifyRightTip(_source, T.invalid .. amount, 4000)
@@ -286,7 +289,8 @@ RegisterServerEvent('vorp_bank:withgold', function(amount, bankName)
                 MySQL.update("UPDATE bank_users SET gold = @newGoldBalance WHERE charidentifier = @characterId AND name = @bankName", { characterId = characterId, newGoldBalance = newGoldBalance, bankName = bankName })
                 playerCharacter.addCurrency(1, amount)
                 DiscordLogs(amount, bankName, playerFullName, "withdraw", "gold")
-                VORPcore.NotifyRightTip(_source, T.withdrewg .. amount, 4000)
+                --VORPcore.NotifyRightTip(_source, T.withdrewg .. amount, 4000)
+                VORPcore.NotifyRightTip(_source, "Sie haben " .. amount .. "Gold abgeholt", 4000)
             else
                 VORPcore.NotifyRightTip(_source, T.invalid, 4000)
             end

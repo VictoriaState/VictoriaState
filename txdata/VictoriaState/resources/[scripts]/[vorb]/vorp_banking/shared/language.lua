@@ -395,7 +395,7 @@ Translation.Langs = {
     German = {
         openmenu     = "Sprechen Sie mit dem Angestellten",
         closemenu    = "Die Bank ist derzeit geschlossen",
-        bank         = "Willkommen bei",
+        bank         = "Willkommen bei der",
         welcome      = "Willkommen bei der Bank",
         cashbalance  = "Geld: $",
         goldbalance  = "Gold: ",
@@ -414,7 +414,7 @@ Translation.Langs = {
         amount       = "Anzahl der Fächer",
         youdepo      = "Sie haben $ eingezahlt",
         youdepog     = "Sie haben G eingezahlt",
-        invalid      = "Ungültiger Betrag",
+        invalid      = "Soviel haben Sie nicht!",
         withdrew     = "Sie haben $ abgehoben",
         withdrewg    = "Sie haben G abgehoben",
         withc        = "Bargeld abheben",
@@ -482,12 +482,12 @@ Translation.Langs = {
         },
         Webhooks     = {
             LogTitle = "🏦 Bankaktivitätsprotokoll",
-            WithdrawLogDescription = "💸 **Spieler:** `%s`\n**Hat abgehoben:** `%s`\n**Von Bank:** `%s`",
-            DepositLogDescription = "💰 **Spieler:** `%s`\n**Hat eingezahlt:** `%s`\n**Zu Bank:** `%s`",
+            WithdrawLogDescription = "💸 **Einwohner:** `%s`\n**Hat abgehoben:** `%s`\n**Von Bank:** `%s`",
+            DepositLogDescription = "💰 **Einwohner:** `%s`\n**Hat eingezahlt:** `%s`\n**Zu Bank:** `%s`",
             TransferLogDescription =
-            "🔄 **Spieler:** `%s`\n**Hat überwiesen:** `%s`\n**Von Bank:** `%s`\n**Zu Bank:** `%s`",
-            TakeLogDescription = "📤 **Spieler:** `%s`\n**Hat genommen:** `%s %s`\n**Von Bank:** `%s`",
-            MoveLogDescription = "📥 **Spieler:** `%s`\n**Hat bewegt:** `%s %s`\n**Zu Bank:** `%s`"
+            "🔄 **Einwohner:** `%s`\n**Hat überwiesen:** `%s`\n**Von Bank:** `%s`\n**Zu Bank:** `%s`",
+            TakeLogDescription = "📤 **Einwohner:** `%s`\n**Hat genommen:** `%s %s`\n**Von Bank:** `%s`",
+            MoveLogDescription = "📥 **Einwohner:** `%s`\n**Hat bewegt:** `%s %s`\n**Zu Bank:** `%s`"
         }
     },
     Spanish = {
