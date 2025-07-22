@@ -1,16 +1,16 @@
 Config                    = {}
 
-Config.Lang               = "English"
+Config.Lang               = "German"
 
-Config.WithdrawLogWebhook = ""
+Config.WithdrawLogWebhook = "https://discord.com/api/webhooks/1397240389123051601/z18RM00pnHmpc8Xjyz_puydMzze3MOMOoZOP3iVMKsNcVeSdFTHRdZDpdn1hEIJvYI21"
 
-Config.DepositLogWebhook  = ""
+Config.DepositLogWebhook  = "https://discord.com/api/webhooks/1397240389123051601/z18RM00pnHmpc8Xjyz_puydMzze3MOMOoZOP3iVMKsNcVeSdFTHRdZDpdn1hEIJvYI21"
 
-Config.TransferLogWebhook = ""
+Config.TransferLogWebhook = "https://discord.com/api/webhooks/1397240389123051601/z18RM00pnHmpc8Xjyz_puydMzze3MOMOoZOP3iVMKsNcVeSdFTHRdZDpdn1hEIJvYI21"
 
-Config.TakeLogWebhook     = ""
+Config.TakeLogWebhook     = "https://discord.com/api/webhooks/1397240389123051601/z18RM00pnHmpc8Xjyz_puydMzze3MOMOoZOP3iVMKsNcVeSdFTHRdZDpdn1hEIJvYI21"
 
-Config.MoveLogWebhook     = ""
+Config.MoveLogWebhook     = "https://discord.com/api/webhooks/1397240389123051601/z18RM00pnHmpc8Xjyz_puydMzze3MOMOoZOP3iVMKsNcVeSdFTHRdZDpdn1hEIJvYI21"
 
 Config.Key                = 0x760A9C6F -- [G]
 
@@ -22,27 +22,27 @@ Config.banks              = {
 
     Valentine = {                                              -- Names must be the same in databse BANKS TABLE
         city = "Valentine",                                    -- Names must be the same in databse BANKS TABLE
-        name = "Valentine Bank",
-        BankLocation = { x = -308.02, y = 773.82, z = 116.7 }, -- Bank Location (X, Y, Z)
+        name = "Bank von Valentine", -- Name der Bank
+        BankLocation = { x = -308.02, y = 773.82, z = 116.7 }, -- Wo ist die Bank (X, Y, Z)
         blipsprite = -2128054417,
-        blipAllowed = true,
-        NpcAllowed = true,
-        NpcModel = "S_M_M_BankClerk_01",
-        NpcPosition = { x = -308.02, y = 773.82, z = 116.7, h = 18.69 }, -- NPC Postition (X, Y, Z, H)
-        StoreHoursAllowed = true,
+        blipAllowed = true, -- soll sie per Blip angezeigt werden?
+        NpcAllowed = true, -- NPCs dort erlaubt?
+        NpcModel = "S_M_M_BankClerk_01", -- Welches NPC Model steht hinter dem Tresen
+        NpcPosition = { x = -308.02, y = 773.82, z = 116.7, h = 18.69 }, -- Position des NPCs (X, Y, Z, H)
+        StoreHoursAllowed = true, -- Soll die Bank Öffnungszeiten haben=?
         StoreOpen = 7,                                                   -- am
         StoreClose = 22,                                                 -- pm
         distOpen = 3.5,
-        gold = true,                                                     -- If you want deposit and withdraw gold
-        items = true,                                                    -- If you want use safebox
-        upgrade = true,                                                  -- If you want upgrade safebox
-        costslot = 10,                                                   -- choose price for upgrade + 1 slot
-        maxslots = 100,                                                  -- choose max slots for upgrade
+        gold = true,                                                     -- Soll dort Gold abgehoben und transferiert werden?
+        items = true,                                                    -- Können Items dort gelagert  werden?
+        upgrade = true,                                                  -- Kann man die Box upgraden?
+        costslot = 10,                                                   -- Preis für +1 Item mehr
+        maxslots = 100,                                                  -- Mximale ANzahl an Items
         canStoreWeapons = true,
     },
 
     Blackwater = {
-        name = "Blackwater Bank",
+        name = "Bank von Blackwater",
         BankLocation = { x = -813.18, y = -1277.60, z = 43.68 },
         city = "Blackwater",
         blipsprite = -2128054417,
@@ -65,7 +65,7 @@ Config.banks              = {
 
     SaintDenis = {
         city = "SaintDenis",
-        name = "Saint Denis Bank",
+        name = "Bank von Saint Denis",
         BankLocation = { x = 2644.08, y = -1292.21, z = 52.29 },
         blipsprite = -2128054417,
         blipAllowed = true,
@@ -87,7 +87,7 @@ Config.banks              = {
     },
 
     Rhodes = {
-        name = "Rhodes Bank",
+        name = "Bank von Rhodes",
         BankLocation = { x = 1294.14, y = -1303.06, z = 77.04 },
         city = "Rhodes",
         blipsprite = -2128054417,
