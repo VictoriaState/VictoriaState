@@ -1,0 +1,63 @@
+txdata/admins.json
+txdata/default/config.json
+txdata/default/data/cachedData.json
+txdata/default/data/configChangelog.json
+txdata/default/data/playersDB.backup.json
+txdata/default/data/playersDB.json
+txdata/default/data/stats_playerDrop.json
+txdata/default/data/stats_svRuntime.json
+txdata/default/logs/admin.log
+txdata/default/logs/admin_2025-07-13_00-00-00_1.log
+txdata/default/logs/admin_2025-07-15_00-00-00_1.log
+txdata/default/logs/admin_2025-07-16_00-00-00_1.log
+txdata/default/logs/admin_2025-07-18_00-00-00_1.log
+txdata/default/logs/admin_2025-07-20_00-00-00_1.log
+txdata/default/logs/admin_2025-07-21_00-00-00_1.log
+txdata/default/logs/fxserver.history
+txdata/default/logs/fxserver.log
+txdata/default/logs/fxserver_2025-07-13_00-00-00_1.log
+txdata/default/logs/fxserver_2025-07-15_00-00-00_1.log
+txdata/default/logs/fxserver_2025-07-16_00-00-00_1.log
+txdata/default/logs/fxserver_2025-07-18_00-00-00_1.log
+txdata/default/logs/fxserver_2025-07-19_00-00-00_1.log
+txdata/default/logs/fxserver_2025-07-20_00-00-00_1.log
+txdata/default/logs/fxserver_2025-07-21_00-00-00_1.log
+txdata/default/logs/server.history
+txdata/default/logs/server.log
+txdata/default/logs/server_2025-07-13_00-00-00_1.log
+txdata/default/logs/server_2025-07-15_00-00-00_1.log
+txdata/default/logs/server_2025-07-16_00-00-00_1.log
+txdata/default/logs/server_2025-07-18_00-00-00_1.log
+txdata/default/logs/server_2025-07-19_00-00-00_1.log
+txdata/default/logs/server_2025-07-20_00-00-00_1.log
+txdata/default/logs/server_2025-07-21_00-00-00_1.log
+txdata/VictoriaState/Dateien/ctrl_anim-v1.11.pack.zip
+txdata/VictoriaState/Dateien/dl_advancedbilling-main.pack.zip
+txdata/VictoriaState/Dateien/dl_advancedstores.pack.zip
+txdata/VictoriaState/Dateien/dl_society-main.pack.zip
+txdata/VictoriaState/Dateien/dl_storages.pack.zip
+txdata/VictoriaState/Dateien/fx-craft.pack (1).zip
+txdata/VictoriaState/Dateien/fx-craft.pack.zip
+txdata/VictoriaState/Dateien/fx-fishing.pack.zip
+txdata/VictoriaState/Dateien/gum_camping.pack.zip
+txdata/VictoriaState/Dateien/gum_newspapers.pack.zip
+txdata/VictoriaState/Dateien/gum_ranch.pack.zip
+txdata/VictoriaState/Dateien/gumApi1.zip
+txdata/VictoriaState/Dateien/kd_clothingstore.pack.zip
+txdata/VictoriaState/Dateien/kd_hairdresser_makeup.pack.zip
+txdata/VictoriaState/Dateien/sirevlc_butcher.pack.zip
+txdata/VictoriaState/Dateien/sirevlc_guarma.pack.zip
+txdata/VictoriaState/Dateien/sirevlc_horses.pack.zip
+txdata/VictoriaState/Dateien/sirevlc_horses_interactions.pack.zip
+txdata/VictoriaState/Dateien/sirevlc_hunting_script.pack (1).zip
+txdata/VictoriaState/Dateien/sirevlc_hunting_script.pack.zip
+txdata/VictoriaState/Dateien/sirevlc_hunting_wagon_ALL_FRAMEWORKS.pack.zip
+txdata/VictoriaState/Dateien/sirevlc_wagons.pack.zip
+txdata/VictoriaState/Dateien/spooni_prop_deleter.pack (1).zip
+txdata/VictoriaState/Dateien/spooni_prop_deleter.pack.zip
+txdata/VictoriaState/Dateien/syn_books.pack.zip
+txdata/VictoriaState/Dateien/syn_weaponsV2.pack.zip
+txdata/VictoriaState/Dateien/tp_farming 1.2.6.pack.zip
+txdata/VictoriaState/Dateien/tp_pinboard 1.1.3.pack.zip
+txdata/VictoriaState/Dateien/visn_telegram.pack.zip
+txdata/VictoriaState/Dateien/vorp_inventory-hotbar-removed2.pack.zip
