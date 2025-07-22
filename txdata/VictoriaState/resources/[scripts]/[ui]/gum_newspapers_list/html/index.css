@@ -1,0 +1,70 @@
+@font-face {
+    font-family: crock;
+    src: url(crock.ttf);
+}
+
+* {
+    font-family: crock;
+    box-sizing: inherit;
+    touch-action: manipulation;
+}
+
+body {
+    background: none !important;
+}
+div {
+    padding-left: 5%;
+    height: 78%;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ ::-webkit-scrollbar-track {
+    background: rgb(73, 73, 73); 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #b3b3b3; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: rgb(39, 39, 39); 
+  }
+
+  .align-left {
+    text-align: left;
+    left: -15px;
+}
+
+#container {
+    display: block;
+    -webkit-user-drag: element;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 11%;
+    left: 22%;
+    width: 50%;
+    height: 80%;
+    background-color: transparent;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#ListButton {
+    overflow: auto;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1000px) rotateX(1deg) rotateY(0deg) rotate(1deg);
+}

@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'crock';
+    src: url('crock.ttf');
+}
+
+@font-face {
+    font-family: 'crock2';
+    src: url('koala.ttf');
+}
+
+* {
+    font-family: 'crock2';
+    box-sizing: inherit;
+    touch-action: manipulation;
+}
+
+
+body {
+    overflow:hidden;
+    width:100%;
+    height:100%;
+}
+
+#ink {
+    position:absolute;
+    top:67%;
+    left:42%;
+    background-image: url('inkBackground.png');
+    background-size: 100% 100%;
+    width: 20.5%;
+    height: 10%;
+}
+#flipbook .left_page {
+    background: url('left_page.png');
+    background-size: 100% 100%;
+}
+#flipbook .right_page {
+    background: url('right_page.png');
+    background-size: 100% 100%;
+}
+#flipbook #hard {
+    background: url('front_side.png');
+    background-size: 100% 100%;
+}
+#flipbook #hard2 {
+    background: url('frontb_side.png');
+    background-size: 100% 100%;
+}
+#flipbook #hard3 {
+    background: url('backb_side.png');
+    background-size: 100% 100%;
+}
+#flipbook #hard4 {
+    background: url('back_side.png');
+    background-size: 100% 100%;
+}
+#flipbook .shadow,
+#flipbook.shadow {
+    -webkit-box-shadow: 0 4px 10px #181818;
+    -moz-box-shadow: 0 4px 10px #181818;
+    -ms-box-shadow: 0 4px 10px #181818;
+    -o-box-shadow: 0 4px 10px #181818;
+    box-shadow: 0 4px 10px #181818;
+}
+#textPosition {
+    position:absolute;
+    background-color: transparent;
+    top:7.3%;
+    left:5%;
+    width:88%;
+}
+#notepad {
+    overflow-y: hidden;
+    position: absolute;
+    color: rgba(27, 27, 27, 0.70);
+    left: 30%;
+    top: 30%;
+    font-size: 1.3vw;
+    padding-left:10px;
+    width: 20%;
+    height: 50%;
+    line-height: 1.835vh;
+    background-color: transparent;
+    background-repeat: no-repeat;    
+    background: url('empty_page.png');
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#bold {
+    position:absolute;
+    top:430px;
+    left:100px;
+    font-size: 45px;
+    color:white;
+}
+
+input, span{
+    top:50px;
+    position:absolute;
+    width:120px;
+}
+
+span{
+    top:2px;
+    left:2px;
+    z-index:1;
+    overflow:hidden;
+}
+input{
+    background:transparent;
+    z-index:2;
+}
+.editor {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+    color: rgba(27, 27, 27, 0.70);
+    font-weight: normal;
+    left: 5%;
+    top: 7.5%;
+    font-size: 1.3vw;
+    width: 90%;
+    max-width: 90%;
+    height: 90%;
+    max-height: 90%;
+    line-height: 1.835vh;
+    background-color: transparent;
+    background-repeat: no-repeat;    
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+u {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* set the thickness to 2px */
+
+}
+strike {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px; /* set the thickness to 2px */
+
+}
+
+#pin {
+    position:absolute;
+    background: url('pin.png');
+    background-size: 100% 100%;
+    width:6%;
+    height:22%;
+    top:20%;
+    left:5%;
+}
+#pin:hover {
+    position:absolute;
+    background: url('pin_h.png');
+    background-size: 100% 100%;
+    width:6%;
+    height:22%;
+    top:20%;
+    left:5%;
+}
+
+#font_bold {
+    position:absolute;
+    background: url('font_bold.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:20%;
+    left:28%;
+}
+#font_bold:hover {
+    position:absolute;
+    background: url('font_bold_h.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:20%;
+    left:28%;
+}
+
+#font_underline {
+    position:absolute;
+    background: url('font_underline.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:20%;
+    left:57%;
+}
+#font_underline:hover {
+    position:absolute;
+    background: url('font_underline_h.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:20%;
+    left:57%;
+}
+
+#font_strike {
+    position:absolute;
+    background: url('font_strike.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:20%;
+    left:85%;
+}
+#font_strike:hover {
+    position:absolute;
+    background: url('font_strike_h.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:20%;
+    left:85%;
+}
+
+ #font_jleft {
+    position:absolute;
+    background: url('font_jleft.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:60%;
+    left:28%;
+}
+#font_jleft:hover {
+    position:absolute;
+    background: url('font_jleft_h.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:60%;
+    left:28%;
+}
+
+#font_jcenter {
+    position:absolute;
+    background: url('font_jcenter.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:60%;
+    left:57%;
+}
+#font_jcenter:hover {
+    position:absolute;
+    background: url('font_jcenter_h.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:60%;
+    left:57%;
+}    
+
+#font_jright {
+    position:absolute;
+    background: url('font_jright.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:60%;
+    left:85%;
+}
+#font_jright:hover {
+    position:absolute;
+    background: url('font_jright_h.png');
+    background-size: 100% 100%;
+    width:7%;
+    height:22%;
+    top:60%;
+    left:85%;
+}
+#page_turn {
+    position:absolute;
+    width:10%;
+    height:22%;
+    font-size:25px;
+    font-family: 'crock';
+    top:60%;
+    left:5%;
+    border:none;
+    outline: none;
+    resize: none;
+    color : white;
+    
+}
+
+
+::placeholder {
+    color:white;
+}
