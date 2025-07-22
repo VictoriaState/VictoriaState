@@ -271,7 +271,7 @@ local function updateMenu(menu, updates)
 end
 
 function OpenCharCreationMenu(clothingtable, value)
-    Title = IsInClothingStore and "Clothing Store" or T.MenuCreation.title
+    Title = IsInClothingStore and "Kleidungsladen" or T.MenuCreation.title
     local SubTitle = "<span style='font-size:25px;'>" .. T.MenuCreation.subtitle .. "</span><br><br>"
     if width <= 1920 then
         SubTitle = T.MenuCreation.subtitle
@@ -615,7 +615,7 @@ end
 
 --* CLOTHING MENU
 function OpenClothingMenu(Table, value, Outfits)
-    Title = IsInClothingStore and "Clothing Store" or T.MenuClothes.title
+    Title = IsInClothingStore and "Kleidungsladen" or T.MenuClothes.title
     MenuData.CloseAll()
 
     local menuSpace = "<br><br><br><br><br><br><br><br><br><br><br>"

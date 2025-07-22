@@ -1,5 +1,5 @@
 -- check translation file to see if your language is available or add it.
-Lang = "English"
+Lang = "German"
 
 Config = {}
 
@@ -13,7 +13,7 @@ Config.MinAge = 18 -- minimum age required to create a character
 Config.BannedNames = { "Arthur", "Marshton", "Shit", "Dick" } --* you can add more words
 
 -- allow player to delete character
-Config.AllowPlayerDeleteCharacter = true
+Config.AllowPlayerDeleteCharacter = false
 
 -- command to reload character
 Config.ReloadCharCommand = "rc"

@@ -1,6 +1,6 @@
 ConfigShops                      = {}
 
-ConfigShops.UseShops             = true  -- if you want to use the shops set to true if not set to false
+ConfigShops.UseShops             = false  -- if you want to use the shops set to true if not set to false
 
 ConfigShops.SecondChancePrice    = 15000 -- if store is second chance then this is the price they need to pay to use it
 
@@ -28,7 +28,7 @@ ConfigShops.Locations = {
     {                                                   -- valentine
         Prompt = {
             Position = vector3(-326.1, 774.48, 117.46), -- prompt location
-            Label = "Clothing Store",                   -- prompt label
+            Label = "Kleidungsladen",                   -- prompt label
         },
         Npc = {
             Enable = true,
@@ -38,7 +38,7 @@ ConfigShops.Locations = {
         Blip = {
             Enable = true,
             Sprite = 1195729388,
-            Name = "Clothing Store",
+            Name = "Kleidungsladen",
             -- Color = 'BLIP_MODIFIER_MP_COLOR_23',
         },
         EditCharacter = { -- where the player will be teleported to edit character
@@ -58,8 +58,8 @@ ConfigShops.Locations = {
         },
            -- CAN BE MULTIPLE
            TypeOfShop = {
-            { type = SHOP_TYPES.CLOTHING, label = "Clothing Store", input = 0xC7B5340A }, -- enter key
-            { type = SHOP_TYPES.HAIR,     label = "Hair Store",     input = 0xD9D0E1C0 }, -- space key
+            { type = SHOP_TYPES.CLOTHING, label = "Kleidungsladen", input = 0xC7B5340A }, -- enter key
+            { type = SHOP_TYPES.HAIR,     label = "Barbier",     input = 0xD9D0E1C0 }, -- space key
 
         },
         DrawLight = false,                                -- if you need a light in the store put true
@@ -67,7 +67,7 @@ ConfigShops.Locations = {
     {                                                     -- blackwater
         Prompt = {
             Position = vector3(-761.61, -1291.98, 43.85), -- prompt location
-            Label = "Clothing Store",                     -- prompt label
+            Label = "Kleidungsladen",                     -- prompt label
         },
         Npc = {
             Enable = true,
@@ -78,7 +78,7 @@ ConfigShops.Locations = {
         Blip = {
             Enable = true,
             Sprite = 1195729388,
-            Name = "Clothing Store",
+            Name = "Kleidungsladen",
             -- Color = 'BLIP_MODIFIER_MP_COLOR_23',
         },
         EditCharacter = { -- where the player will be teleported to edit character
@@ -97,8 +97,8 @@ ConfigShops.Locations = {
         },
         -- CAN BE MULTIPLE
         TypeOfShop = {
-            { type = SHOP_TYPES.CLOTHING, label = "Clothing Store", input = 0xC7B5340A }, -- enter key
-            { type = SHOP_TYPES.HAIR,     label = "Hair Store",     input = 0xD9D0E1C0 }, -- space key
+            { type = SHOP_TYPES.CLOTHING, label = "Kleidungsladen", input = 0xC7B5340A }, -- enter key
+            { type = SHOP_TYPES.HAIR,     label = "Barbier",     input = 0xD9D0E1C0 }, -- space key
 
         },
         DrawLight = false,                                -- if you need a light in the store put true
@@ -106,7 +106,7 @@ ConfigShops.Locations = {
     {                                                     -- Rhodes
         Prompt = {
             Position = vector3(1324.66, -1291.59, 77.08), -- prompt location
-            Label = "Enter Clothing Store",               -- prompt label
+            Label = "Sich neu einkleiden",               -- prompt label
         },
         Npc = {
             Enable = true,
@@ -117,7 +117,7 @@ ConfigShops.Locations = {
         Blip = {
             Enable = true,
             Sprite = 1195729388,
-            Name = "Rhodes Clothing Store",
+            Name = "Kleidungsladen von Rhodes",
             -- Color = 'BLIP_MODIFIER_MP_COLOR_23',
         },
         EditCharacter = { -- where the player will be teleported to edit character
@@ -136,8 +136,8 @@ ConfigShops.Locations = {
         },
         -- CAN BE MULTIPLE
         TypeOfShop = {
-            { type = SHOP_TYPES.CLOTHING, label = "Clothing Store", input = 0xC7B5340A },     -- enter key
-            { type = SHOP_TYPES.HAIR,     label = "Hair Store",     input = 0xD9D0E1C0 },     -- space key
+            { type = SHOP_TYPES.CLOTHING, label = "Kleidungsladen", input = 0xC7B5340A },     -- enter key
+            { type = SHOP_TYPES.HAIR,     label = "Barbier",     input = 0xD9D0E1C0 },     -- space key
 
         },
         DrawLight = false,                               -- if you need a light in the store put true
@@ -156,7 +156,7 @@ ConfigShops.Locations = {
         Blip = {
             Enable = true,
             Sprite = 1195729388,
-            Name = "Saint Denis Kleidungsladen",
+            Name = "Kleidungsladen von Saint Denis",
             -- Color = 'BLIP_MODIFIER_MP_COLOR_23',
         },
         EditCharacter = { -- where the player will be teleported to edit character
@@ -175,8 +175,8 @@ ConfigShops.Locations = {
         },
         -- CAN BE MULTIPLE
         TypeOfShop = {
-            { type = SHOP_TYPES.CLOTHING, label = "Clothing Store", input = 0xC7B5340A },     -- enter key
-            { type = SHOP_TYPES.HAIR,     label = "Hair Store",     input = 0xD9D0E1C0 },     -- space key
+            { type = SHOP_TYPES.CLOTHING, label = "Kleidungsladen", input = 0xC7B5340A },     -- enter key
+            { type = SHOP_TYPES.HAIR,     label = "Barbier",     input = 0xD9D0E1C0 },     -- space key
 
         },
         DrawLight = false,                                 -- if you need a light in the store put true
@@ -184,7 +184,7 @@ ConfigShops.Locations = {
     {                                                      -- Strawberry
         Prompt = {
             Position = vector3(-1791.07, -392.71, 160.29), -- prompt location
-            Label = "Enter Clothing Store",                -- prompt label
+            Label = "Sich neu einkleiden",                -- prompt label
         },
         Npc = {
             Enable = true,
@@ -195,7 +195,7 @@ ConfigShops.Locations = {
         Blip = {
             Enable = true,
             Sprite = 1195729388,
-            Name = "Strawberry Clothing Store",
+            Name = "Kleidungsladen von Strawberry",
             -- Color = 'BLIP_MODIFIER_MP_COLOR_23',
         },
         EditCharacter = { -- where the player will be teleported to edit character
@@ -214,8 +214,8 @@ ConfigShops.Locations = {
         },
         -- CAN BE MULTIPLE
         TypeOfShop = {
-            { type = SHOP_TYPES.CLOTHING, label = "Clothing Store", input = 0xC7B5340A },         -- enter key
-            { type = SHOP_TYPES.HAIR,     label = "Hair Store",     input = 0xD9D0E1C0 },         -- space key
+            { type = SHOP_TYPES.CLOTHING, label = "Kleidungsladen", input = 0xC7B5340A },         -- enter key
+            { type = SHOP_TYPES.HAIR,     label = "Barbier",     input = 0xD9D0E1C0 },         -- space key
 
         },
         DrawLight = false,                                 -- if you need a light in the store put true
@@ -223,7 +223,7 @@ ConfigShops.Locations = {
     {                                                      -- Tumblweed
         Prompt = {
             Position = vector3(-5483.24, -2933.42, -0.35), -- prompt location
-            Label = "Enter Clothing Store",                -- prompt label
+            Label = "Sich neu einkleiden",                -- prompt label
         },
         Npc = {
             Enable = true,
@@ -234,7 +234,7 @@ ConfigShops.Locations = {
         Blip = {
             Enable = true,
             Sprite = 1195729388,
-            Name = "Tumbleweed Clothing Store",
+            Name = "Kleidungsladen von Tumbleweed",
             -- Color = 'BLIP_MODIFIER_MP_COLOR_23',
         },
         EditCharacter = { -- where the player will be teleported to edit character
@@ -253,8 +253,8 @@ ConfigShops.Locations = {
         },
         -- CAN BE MULTIPLE
         TypeOfShop = {
-            { type = SHOP_TYPES.CLOTHING, label = "Clothing Store", input = 0xC7B5340A },     -- enter key
-            { type = SHOP_TYPES.HAIR,     label = "Hair Store",     input = 0xD9D0E1C0 },     -- space key
+            { type = SHOP_TYPES.CLOTHING, label = "Kleidungsladen", input = 0xC7B5340A },     -- enter key
+            { type = SHOP_TYPES.HAIR,     label = "Barbier",     input = 0xD9D0E1C0 },     -- space key
 
         },
         DrawLight = false,                                 -- if you need a light in the store put true
@@ -262,7 +262,7 @@ ConfigShops.Locations = {
     {                                                      -- Armadillo
         Prompt = {
             Position = vector3(-3686.21, -2626.6, -13.38), -- prompt location
-            Label = "Enter Clothing Store",                -- prompt label
+            Label = "Sich neu einkleiden",                -- prompt label
         },
         Npc = {
             Enable = true,
@@ -273,7 +273,7 @@ ConfigShops.Locations = {
         Blip = {
             Enable = true,
             Sprite = 1195729388,
-            Name = "Armadillo Clothing Store",
+            Name = "Kleidungsladen von Armadillo",
             -- Color = 'BLIP_MODIFIER_MP_COLOR_23',
         },
         EditCharacter = { -- where the player will be teleported to edit character
@@ -293,8 +293,8 @@ ConfigShops.Locations = {
 
         -- CAN BE MULTIPLE
         TypeOfShop = {
-            { type = SHOP_TYPES.CLOTHING, label = "Clothing Store", input = 0xC7B5340A }, -- enter key
-            { type = SHOP_TYPES.HAIR,     label = "Hair Store",     input = 0xD9D0E1C0 }, -- space key
+            { type = SHOP_TYPES.CLOTHING, label = "Kleidungsladen", input = 0xC7B5340A }, -- enter key
+            { type = SHOP_TYPES.HAIR,     label = "Barbier",     input = 0xD9D0E1C0 }, -- space key
 
         },
         DrawLight = false, -- if you need a light in the store put true
