@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>dl-billing</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div id="page-wrapper">
+      <div class="container">
+        <div class="backgroundimage">
+          <div class="content" id="bill">
+
+            <div class="header">Invoice</div>
+
+            <div class="reason" v-if="status > -1">{{reason}}</div>
+            <div id="createbillreason" class="reason" v-if="status < 0">
+              <textarea placeholder="Enter the invoice reason here ..." @keydown="checkEnter" data-role="none" maxlength="450"></textarea>
+            </div>
+
+            <div class="amount" v-if="status > -1">Sum: {{amount}}$</div>
+            <div id="createbillamount" class="amount" v-if="status < 0">Sum: <input type="number" step="any" min="0" placeholder="0.00" value=0.00 />$</div>
+
+            <div class="signs">
+              <div class="fromUser"><p><b>{{seller}}</b></p></div>
+              <div class="toUser" @click="acceptBill()" v-bind:class="(status == 0 && acceptType == 0)?'notsigned':''" v-if="status > -1 && acceptType == 0 || status > 0"><p v-if="status > 0"><b>{{buyer}}</b></p></div>
+            </div>
+
+            <button class="payButton" v-if="status == 2" @click="payBill()">Pay the bill | {{amount}}$</button>
+
+            <button class="payButton" v-if="status == 0" @click="instantpayBill()">Pay Now</button>
+            <button class="signButton" v-if="status == 0 && acceptType == 1" @click="acceptBill()">Pay Later</button>
+            <button class="createBillButton" v-if="status < 0" @click="createNewBill()">Create Bill</button>
+            <button class="cancelButton"> <p v-if="status == 0" @click="denyBill()">Reject</p> <p v-if="status != 0" @click="cancelBill()">Cancel</p> </button>
+
+          </div>
+          <img class="paperbackground" src="oldpaper.png"></img>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

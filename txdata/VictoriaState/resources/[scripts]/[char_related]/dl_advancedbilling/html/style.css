@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "Carnivalee Freakshow";
+  src: url("fonts/chineserocks.ttf");
+}
+
+
+*{
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+#page-wrapper{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: Carnivalee Freakshow, serif !important;
+  font-style: normal;
+  font-weight: 400;
+  display: none;
+}
+
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.backgroundimage{
+  height: 100%;
+  width: 40%;
+}
+
+
+.content{
+  position: absolute;
+  height: 80vh;
+  width: 40%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  box-sizing: border-box;
+  z-index: 99;
+  margin-top: 10vh;
+  opacity: 0.85;
+
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+
+.header{
+  font-size: 52px;
+  text-align: center;
+  padding-bottom: 30px;
+  opacity: 0.9;
+}
+
+
+#createbillreason,#createbillamount{
+  font-family: 'Zeyada', cursive;
+}
+
+
+
+#createbillamount input{
+  font-size: 36px;
+  font-family: 'Zeyada', cursive;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+  padding: 0;
+  width: 17%;
+  -moz-appearance:textfield !important;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+#createbillamount input:focus-visible{
+  outline: none;
+  -moz-appearance:textfield;
+  -webkit-appearance:none;
+}
+
+#createbillamount input:active, #createbillamount input:focus{
+  -webkit-appearance:none;
+  -moz-appearance:textfield;
+}
+
+
+#createbillamount input::-webkit-inner-spin-button, #createbillamount input::-webkit-outer-spin-button{
+  -moz-appearance:textfield !important;
+  -webkit-appearance: none !important;
+  margin: 0;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
+
+.reason{
+  max-height: 40vh;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.1; /* 4px +12px + 4px */
+  font-family: 'Zeyada', cursive;
+  height: 40vh;
+  white-space: pre-wrap;
+}
+
+
+#createbillreason textarea{
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  font-size: 32px;
+  line-height: 1.1;
+  font-family: 'Zeyada', cursive;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+  padding: 0;
+  resize: none !important;
+  overflow: none;
+
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+
+#createbillreason textarea:focus-visible{
+  outline: none;
+}
+
+
+.amount{
+  margin-top: 1vh;
+  font-family: 'Zeyada', cursive;
+  height: 4vh;
+  width: 100%;
+  font-size: 36px;
+}
+
+
+.signs{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 5vh;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+
+.fromUser{
+  position: relative;
+  margin-left: 0;
+  height: 100%;
+  width: 14vw;
+  text-align: center;
+  font-size: 1.979vw;
+  font-family: 'Zeyada', cursive;
+  box-sizing: border-box;
+  border-bottom: 2px solid black !important;
+}
+
+
+.fromUser p{
+  width: 100%;
+}
+
+
+.toUser{
+  position: relative;
+  margin-right: 0;
+  height: 100%;
+  width: 14vw;
+  text-align: center;
+  font-size: 1.979vw;
+  font-family: 'Zeyada', cursive;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-bottom: 2px solid black !important;
+}
+
+
+.toUser p{
+  width: 100%;
+}
+
+
+.notsigned:hover{
+  transform: scale(0.95);
+}
+
+
+.createBillButton{
+  cursor: pointer;
+  background-color: #961C26;
+  border: none;
+  color: white;
+  padding: 1%;
+  font-size: 24px;
+  font-family: Carnivalee Freakshow, serif !important;
+  float: right;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+.payButton, .signButton{
+  cursor: pointer;
+  background-color: #961C26;
+  border: none;
+  color: white;
+  padding: 1%;
+  font-size: 24px;
+  font-family: Carnivalee Freakshow, serif !important;
+  float: right;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+.signButton{
+  margin-right: 20px;
+}
+
+.cancelButton {
+  float: left;
+  cursor: pointer;
+  background-color: #961C26;
+  border: none;
+  color: white;
+  padding: 1%;
+  font-size: 24px;
+  font-family: Carnivalee Freakshow, serif !important;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.9;
+  width: 25%;
+}
+
+
+.payButton:hover, .cancelButton:hover, .createBillButton:hover, .signButton:hover{
+  transform: scale(0.95);
+}
+
+.paperbackground{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+
+@media only screen and (min-width: 1921px) {
+
+  .reason{
+    font-size: 42px;
+  }
+
+  #createbillreason textarea{
+    font-size: 42px;
+  }
+
+  .amount{
+    font-size: 44px;
+  }
+
+  #createbillamount input{
+    font-size: 44px;
+  }
+
+  .fromUser, .toUser{
+    font-size: 1.979vw;
+  }
+
+}
