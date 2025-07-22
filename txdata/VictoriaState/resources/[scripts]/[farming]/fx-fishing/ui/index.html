@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixitfy Fishing System</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="minigame.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="controls">
+          
+                <div id="mouse" >
+                <img id="mouse-pic" src="imgs/mouse_left.png"></img>
+          <div id="controls-text-mouse">Hook/Reel</div>
+          </div>
+          </br>  
+          <div id="esc" >
+                      <img id="esc-pic" src="imgs/esc.png"></img>
+          <div id="controls-text-esc">Exit Fishing</div>
+          </div>
+    
+          
+          <p id="controls-text"></p>
+        </div>
+        <div id = "circle-container">
+        
+        
+        <div id="circle-outer">
+    
+          <div id="reeling">
+            <div id="reeling-circle-border"></div>
+            <div id="line-decor"></div>
+            <div id="line2-decor"></div>
+            <div id="line3-decor"></div>
+            <div id="line4-decor"></div>
+            <div id="line5-decor"></div>
+          </div>
+    
+          <div id="hook">
+            <img id="bobber-decor" src="imgs/fish.png"></img>
+          </div>
+    
+          <div id="bobber">
+            <div id="line-decor"></div>
+            <div id="bobber-circle-border"></div>
+            <img id="bobber-decor" src="imgs/bobber.png"></img>
+          </div>
+    
+          <div id="wrapper">
+            <svg class="progress noselect" data-progress="100" x="0px" y="0px" viewBox="0 0 130 80">
+              <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+              <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+            </svg>
+          </div>
+          <div id="text-progress">0%</div>
+          <div id="circle-inner" style="width: 1%; height: 1%; border-radius: 50%;"></div>
+        </div>
+      </div>
+    </div>
+    <div id="upgrade-container">
+        <div class="infoframe">
+            <div class="info">
+                <br> 
+                <span>Fishing Chance
+                    <span id="possibility">+%20</span>
+                </span>
+                <br>
+                <span>Big Fish Endurance
+                    <span id="durability">+%40</span>
+                </span>
+        </div>
+        </div>
+        <div class="newlevelimg">
+            <p id="newlevelinfo">8</p>
+        </div>
+        <div class="itemframe">
+            <div class="item"></div>
+        </div>
+        <div class="item2frame">
+            <div class="item2">
+                <div id="item2requirement">5</div>
+            </div>
+            <div id="item2info">Kutsama Kagıdı
+                <span id="item2count">(7)</span>
+            </div>
+        </div>
+        <div class="item3frame">
+            <div class="item3">
+                <div id="item3requirement">10</div>
+            </div>
+            <div id="item3info">Mavi İnci
+                <span id="item3count">(52)</span>
+            </div>
+        </div>
+        <div class="levelimg">
+            <p id="levelinfo">5</p>
+        </div>
+        <p id="upgradeprice">Yükseltme ücreti 40$ onaylıyorsanız butona basın.</p>
+        <div id="upgradebtn"></div>
+        <div id="cancelbtn"></div>
+    </div>
+</body>
+<script src="assets/main.js" type="text/javascript"></script>   
+<script src="index.js" type="text/javascript"></script>    
+</html>
