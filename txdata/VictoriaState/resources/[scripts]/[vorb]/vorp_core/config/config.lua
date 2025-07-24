@@ -40,7 +40,7 @@ Config = {
 
     initGroup             = "user",        -- Default user group for new players. Recommended not to change.
 
-    initJobLabel          = "Unemployed",  -- Default job label for new players. Recommended not to change.
+    initJobLabel          = "Kein Job",  -- Default job label for new players. Recommended not to change.
 
     Whitelist             = false,         -- Enable if not using TxAdmin's whitelist system.
 
@@ -69,7 +69,7 @@ Config = {
 
     SaveDiscordId         = true,  -- Saves Discord ID in the character/user database upon joining/leaving.
 
-    MaxCharacters         = 5,     -- Maximum number of characters a player can create. when first join, for old users go to users table and change the number of characters there
+    MaxCharacters         = 1,     -- Maximum number of characters a player can create. when first join, for old users go to users table and change the number of characters there
 
     --=============================================
     --             UI CORE SETTINGS              --
@@ -90,11 +90,11 @@ Config = {
 
     name                  = "VORP",                               -- Name displayed in webhook embeds.
 
-    logo                  = "https://via.placeholder.com/30x30",  -- Logo URL for webhook embeds.
+    logo                  = "https://cdn.discordapp.com/attachments/1394600377319428147/1394719808523604008/VS_Server_Logo.png?ex=6882618a&is=6881100a&hm=2a2e6fadd63b8db9e5a674faf0a8b7d94fefef1e19cbebc07da1238e8a2c0c64&",  -- Logo URL for webhook embeds.
 
-    footerLogo            = "https://via.placeholder.com/30x30",  -- Footer logo URL for webhook embeds.
+    footerLogo            = "https://cdn.discordapp.com/attachments/1394600377319428147/1394719808523604008/VS_Server_Logo.png?ex=6882618a&is=6881100a&hm=2a2e6fadd63b8db9e5a674faf0a8b7d94fefef1e19cbebc07da1238e8a2c0c64&",  -- Footer logo URL for webhook embeds.
 
-    Avatar                = "https://via.placeholder.com/30x30",  -- Avatar URL for webhook embeds.
+    Avatar                = "https://cdn.discordapp.com/attachments/1394600377319428147/1394719808523604008/VS_Server_Logo.png?ex=6882618a&is=6881100a&hm=2a2e6fadd63b8db9e5a674faf0a8b7d94fefef1e19cbebc07da1238e8a2c0c64&",  -- Avatar URL for webhook embeds.
 
 
     --=============================================
@@ -166,7 +166,7 @@ Config = {
 
     StaminaRecharge         = { enable = true, multiplier = 0.4 },  -- Auto-recharge for stamina, with a multiplier for speed.
 
-    RespawnTime             = 10,                                   -- Time in seconds before a player can respawn.
+    RespawnTime             = 125,                                   -- Time in seconds before a player can respawn.
 
     RespawnKey              = 0xDFF812F9,                           -- Key code for respawning (default is 'E').
 
@@ -210,18 +210,18 @@ Config = {
 
     DateTimeFormat          = "%d/%m/%y %H:%M:%S", -- Format for displaying date and time in ban notifications.
 
-    TimeZone                = " CET",              -- Set your server's timezone.
+    TimeZone                = " MESZ",              -- Set your server's timezone.
 
-    TimeZoneDifference      = 1,                   -- Time difference from UTC, used in the banning system.
+    TimeZoneDifference      = 2,                   -- Time difference from UTC, used in the banning system.
 
     --===========================================
     --    DISCORD RICH PRESENCE INTEGRATION    --
     --===========================================
-    appid                   = nil,                        -- Discord Application ID. Replace this with your own application's ID.
+    appid                   = 1397621149776613509,                        -- Discord Application ID. Replace this with your own application's ID.
 
-    biglogo                 = "LOGOname",                 -- Name of the image asset to use for the large icon in the rich presence.
+    biglogo                 = "vs_logo_transparent",                 -- Name of the image asset to use for the large icon in the rich presence.
 
-    biglogodesc             = " Redm Server Connect: ",   -- Description displayed when hovering over the large icon.
+    biglogodesc             = " Vicoria State: ",   -- Description displayed when hovering over the large icon.
 
     smalllogo               = "smallboy name",            -- Name of the image asset for the small icon in the rich presence. This is optional.
 

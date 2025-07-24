@@ -93,7 +93,7 @@ local function GetPlayerData(source)
 			components = comps,
 			coords = json.decode(characters.coords),
 			isDead = characters.isdead,
-			job = characters.jobLabel or "Unemployed",
+			job = characters.jobLabel or "Kein Job",
 			grade = characters.jobGrade or "",
 			group = characters.group or "",
 			age = characters.age or "",

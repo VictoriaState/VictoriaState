@@ -200,7 +200,7 @@ RegisterNetEvent("vorp_medic:server:firePlayer", function(id)
     end
 
     targetCharacter.setJob("unemployed", true)
-    targetCharacter.setJobLabel("Unemployed", true)
+    targetCharacter.setJobLabel("Kein Job", true)
 
     Core.NotifyObjective(target, T.Player.BeenFireed, 5000)
     Core.NotifyObjective(_source, T.Player.FiredPlayer, 5000)
