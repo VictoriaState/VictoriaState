@@ -71,7 +71,7 @@ if Config.Framework == "RSG" then
     function apiSrv.removeJob(identifier, charidentifier, jobId)
         local jobs = {
             onduty=true,
-            label="Unemployed",
+            label="Kein Job",
             isboss=false,
             payment=10,
             grade={level=0,name="Freelancer"},
