@@ -274,9 +274,9 @@ function OpenCategory(storeId)
 
     for k, value in ipairs(Config.Stores[storeId].category) do
         elements[#elements + 1] = {
-            label = value.label .. "<br>" .. labelStyle:format("choose category"),
+            label = value.label .. "<br>" .. labelStyle:format("Kategorie auswählen"),
             value = value.Type,
-            desc = imgPathMenu:format(value.img) .. " <br> " .. value.desc .. "<br><br><br><br><br><br><br><br><br>" .. divider .. "press enter for options"
+            desc = imgPathMenu:format(value.img) .. " <br> " .. value.desc .. "<br><br><br><br><br><br><br><br><br>" .. divider .. "drücken Sie die Eingabetaste für Optionen"
         }
     end
 
@@ -302,9 +302,9 @@ function OpenSubMenu(storeId, category)
 
     for _, value in ipairs(Config.Stores[storeId].storeType) do
         elements[#elements + 1] = {
-            label = value.label .. "<br>" .. labelStyle:format("choose type"),
+            label = value.label .. "<br>" .. labelStyle:format("Art wählen"),
             value = value.Type,
-            desc = imgPathMenu:format(value.img) .. " <br> " .. value.desc .. "<br><br><br><br><br><br><br><br><br><br><br><br>" .. divider .. "press enter for options"
+            desc = imgPathMenu:format(value.img) .. " <br> " .. value.desc .. "<br><br><br><br><br><br><br><br><br><br><br><br>" .. divider .. "drücken Sie die Eingabetaste für Optionen"
         }
     end
 
@@ -404,7 +404,7 @@ function OpenSellMenu(storeId, category)
                             info = storeItem,
                             item = value,
                             index = storeItem.itemName,
-                            desc = storeItem.desc .. "<br><br>you have x" .. value.count .. "<br><br><br><br><br>" .. divider .. "<br>" .. font .. "<span style='font-family:crock; float:left; font-size: 22px;'>" .. T.Price .. "  </span>" .. font .. "<span style='font-family:crock;float:right; font-size: 22px;'>$" .. string.format("%.2f", sellprice) .. "</span><br>" .. divider .. "<br><br>"
+                            desc = storeItem.desc .. "<br><br>Sie haben x" .. value.count .. "<br><br><br><br><br>" .. divider .. "<br>" .. font .. "<span style='font-family:crock; float:left; font-size: 22px;'>" .. T.Price .. "  </span>" .. font .. "<span style='font-family:crock;float:right; font-size: 22px;'>$" .. string.format("%.2f", sellprice) .. "</span><br>" .. divider .. "<br><br>"
                         }
                     end
                 end
@@ -413,7 +413,7 @@ function OpenSellMenu(storeId, category)
     end
 
     if not next(menuElements) then
-        print("No items found in this category for you to sell ")
+        print("Sie haben keine passenden Artikel ")
         OpenCategory(storeId)
         return
     end
@@ -469,7 +469,7 @@ function OpenSellMenu(storeId, category)
 
                 for key, value in pairs(menu.data.elements) do
                     if value.index == ItemName then
-                        menu.setElement(key, "desc", data.current.info.desc .. "<br><br>you have x" .. data.current.item.count .. "<br><br> " .. T.Price .. "$" .. string.format("%.2f", sellPrice) .. "<br><br><br><br><br>" .. divider .. "<br>" .. font .. "<span style='font-family:crock; float:left; font-size: 22px;'>" .. T.Total .. " </span>" .. font .. "<span style='font-family:crock;float:right; font-size: 22px;'>$" .. string.format("%.2f", sellPrice) .. "</span><br>" .. divider .. "<br><br>")
+                        menu.setElement(key, "desc", data.current.info.desc .. "<br><br>Sie haben x" .. data.current.item.count .. "<br><br> " .. T.Price .. "$" .. string.format("%.2f", sellPrice) .. "<br><br><br><br><br>" .. divider .. "<br>" .. font .. "<span style='font-family:crock; float:left; font-size: 22px;'>" .. T.Total .. " </span>" .. font .. "<span style='font-family:crock;float:right; font-size: 22px;'>$" .. string.format("%.2f", sellPrice) .. "</span><br>" .. divider .. "<br><br>")
                         menu.refresh()
                         break
                     end

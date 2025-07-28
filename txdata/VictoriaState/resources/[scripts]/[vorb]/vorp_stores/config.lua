@@ -1,6 +1,6 @@
 Config = {}
 
-Lang = "English"
+Lang = "German"
 
 -- menu position
 -- "center" / "top-left" / "top-right"
@@ -18,11 +18,11 @@ Config.SellItemBasedOnPercentage = false -- if is true then it will sell items b
 
 
 -- Webhook Section, description is in translation
-Config.UseWebhook = false -- Use webhook
+Config.UseWebhook = true -- Use webhook
 
 Config.WebhookLanguage = {
     -- webhook link is in the server.lua
-    WebhookTitle = "",
+    WebhookTitle = "Store-Log",
     WebhookColor = "",
     WebhookName = "",
     WebhookLogo = "",
@@ -51,14 +51,14 @@ Config.Stores = {
     -- any name you want sell items and buy items must have same name
     Valentine = {
         isDeactivated = false,     -- use this to activate stores or deactivate
-        useRandomLocation = false, -- if true it will pick a random location from the list bellow, good thing for a store that can move and not always in the same place and npc
+        useRandomLocation = true, -- if true it will pick a random location from the list bellow, good thing for a store that can move and not always in the same place and npc
         possibleLocations = {
             OpenMenu = {
-                -- vector3(-324.628, 803.9818, 116.88), -- valentine
+                 vector3(-324.628, 803.9818, 116.88), -- valentine
                 -- add more it will pick a random location from the list
             },
             Npcs = {
-                -- vector4(-324.628, 803.9818, 116.88, -81.17), --valentine
+                vector4(-324.628, 803.9818, 116.88, -81.17), --valentine
                 -- add more it will pick a random location from the list
             }
 
@@ -66,7 +66,7 @@ Config.Stores = {
 
         Blip = {
             Allowed = true,                            -- allow blip to show on map?
-            Name = "valentine store",                  -- blip name
+            Name = "Laden von Valentine",                  -- blip name
             sprite = 1475879922,                       -- blip sprite
             Pos = vector3(-324.628, 803.9818, 116.88), -- blip position and prompt press open position
         },
@@ -80,20 +80,20 @@ Config.Stores = {
 
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Food",    Type = "food",    desc = "Delicious food",       img = "consumable_bread_roll" },
-            { label = "Tools",   Type = "tools",   desc = "Useful tools",         img = "butcher_table_production" },
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "butcher_table_production" },
-            { label = "Meds",    Type = "meds",    desc = "Medical supplies",     img = "syringe" },
-            { label = "Drinks",  Type = "drinks",  desc = "Refreshing beverages", img = "whisky" },
+            { label = "Essen",    Type = "food",    desc = "Leckeres Essen",       img = "consumable_bread_roll" },
+            { label = "Werkzeuge",   Type = "tools",   desc = "Verschiedene Werkzeuge",         img = "butcher_table_production" },
+            { label = "Waffen", Type = "weapons", desc = "Nur zur Verteidigung",          img = "butcher_table_production" },
+            { label = "Medizin",    Type = "meds",    desc = "Medizinsche Ausrüstung",     img = "syringe" },
+            { label = "Getränke",  Type = "drinks",  desc = "Erfrischungen brauchen wir alle", img = "whisky" },
         },
         -- Store type for buy and sell
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
 
-        storeName = "valentine",      -- menu name
-        PromptName = "general store", -- prompt name
+        storeName = "Laden von Valentine",      -- menu name
+        PromptName = "Kolonialwarenladen", -- prompt name
         AllowedJobs = {},             -- if empty everyone can use or do {"police", "sheriff"}
         JobGrade = 1,                 -- use ranks
         StoreHoursAllowed = true,     -- if you want the stores to use opening and closed hours
@@ -108,21 +108,21 @@ Config.Stores = {
 
     Rhodes = {
         isDeactivated = false,     -- use this to activate stores or deactivate
-        useRandomLocation = false, -- if true it will pick a random location from the list bellow, good thing for a store that can move and not always in the same place and npc
+        useRandomLocation = true, -- if true it will pick a random location from the list bellow, good thing for a store that can move and not always in the same place and npc
         possibleLocations = {
             OpenMenu = {
-                -- vector3(-324.628, 803.9818, 116.88), -- valentine
+                 vector3(-324.628, 803.9818, 116.88), -- valentine
                 -- add more it will pick a random location from the list
             },
             Npcs = {
-                -- vector4(-324.628, 803.9818, 116.88, -81.17), --valentine
+                 vector4(-324.628, 803.9818, 116.88, -81.17), --valentine
                 -- add more it will pick a random location from the list
             }
 
         },
         Blip = {
             Allowed = true,
-            Name = "rhodes store",
+            Name = "Laden von Rhodes",
             sprite = 1475879922,
             Pos = vector3(1330.227, -1293.41, 76.021),
         },
@@ -133,23 +133,23 @@ Config.Stores = {
             Model = "S_M_M_UNIBUTCHERS_01",
         },
 
-        storeName = "Rhodes",
-        PromptName = " general store",
+        storeName = "Laden von Rhodes",
+        PromptName = "Kolonialwarenladen", -- prompt name
         distanceOpenStore = 5.0,
         AllowedJobs = {},
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Food",    Type = "food",    desc = "Delicious food",       img = "consumable_bread_roll" },
-            { label = "Tools",   Type = "tools",   desc = "Useful tools",         img = "butcher_table_production" },
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "butcher_table_production" },
-            { label = "Meds",    Type = "meds",    desc = "Medical supplies",     img = "syringe" },
-            { label = "Drinks",  Type = "drinks",  desc = "Refreshing beverages", img = "whisky" },
+            { label = "Essen",    Type = "food",    desc = "Leckeres Essen",       img = "consumable_bread_roll" },
+            { label = "Werkzeuge",   Type = "tools",   desc = "Verschiedene Werkzeuge",         img = "butcher_table_production" },
+            { label = "Waffen", Type = "weapons", desc = "Nur zur Verteidigung",          img = "butcher_table_production" },
+            { label = "Medizin",    Type = "meds",    desc = "Medizinsche Ausrüstung",     img = "syringe" },
+            { label = "Getränke",  Type = "drinks",  desc = "Erfrischungen brauchen wir alle", img = "whisky" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -160,14 +160,14 @@ Config.Stores = {
     },
     Strawberry = {
         isDeactivated = false,     -- use this to activate stores or deactivate
-        useRandomLocation = false, -- if true it will pick a random location from the list bellow, good thing for a store that can move and not always in the same place and npc
+        useRandomLocation = true, -- if true it will pick a random location from the list bellow, good thing for a store that can move and not always in the same place and npc
         possibleLocations = {
             OpenMenu = {
-                -- vector3(-324.628, 803.9818, 116.88), -- valentine
+                 vector3(-324.628, 803.9818, 116.88), -- valentine
                 -- add more it will pick a random location from the list
             },
             Npcs = {
-                -- vector4(-324.628, 803.9818, 116.88, -81.17), --valentine
+                 vector4(-324.628, 803.9818, 116.88, -81.17), --valentine
                 -- add more it will pick a random location from the list
             }
 
@@ -175,7 +175,7 @@ Config.Stores = {
 
         Blip = {
             Allowed = true,
-            Name = "strawberry store",
+            Name = "Laden von Strawberry",
             sprite = 1475879922,
             Pos = vector3(-1789.66, -387.918, 159.32),
 
@@ -187,23 +187,23 @@ Config.Stores = {
             Allowed = true,
             Model = "S_M_M_UNIBUTCHERS_01",
         },
-        storeName = "Strawberry",
-        PromptName = "general store",
+        storeName = "Laden von Strawberry",
+        PromptName = "Kolonialwarenladen", -- prompt name
         distanceOpenStore = 3.0,
         AllowedJobs = {},
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Food",    Type = "food",    desc = "Delicious food",       img = "consumable_bread_roll" },
-            { label = "Tools",   Type = "tools",   desc = "Useful tools",         img = "butcher_table_production" },
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "butcher_table_production" },
-            { label = "Meds",    Type = "meds",    desc = "Medical supplies",     img = "syringe" },
-            { label = "Drinks",  Type = "drinks",  desc = "Refreshing beverages", img = "whisky" },
+            { label = "Essen",    Type = "food",    desc = "Leckeres Essen",       img = "consumable_bread_roll" },
+            { label = "Werkzeuge",   Type = "tools",   desc = "Verschiedene Werkzeuge",         img = "butcher_table_production" },
+            { label = "Waffen", Type = "weapons", desc = "Nur zur Verteidigung",          img = "butcher_table_production" },
+            { label = "Medizin",    Type = "meds",    desc = "Medizinsche Ausrüstung",     img = "syringe" },
+            { label = "Getränke",  Type = "drinks",  desc = "Erfrischungen brauchen wir alle", img = "whisky" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -239,22 +239,22 @@ Config.Stores = {
             Model = "S_M_M_UNIBUTCHERS_01",
         },
         storeName = "Blackwater",
-        PromptName = "general store",
+        PromptName = "Kolonialwarenladen", -- prompt name
         distanceOpenStore = 5.0,
         AllowedJobs = {},
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Food",    Type = "food",    desc = "Delicious food",       img = "consumable_bread_roll" },
-            { label = "Tools",   Type = "tools",   desc = "Useful tools",         img = "butcher_table_production" },
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "butcher_table_production" },
-            { label = "Meds",    Type = "meds",    desc = "Medical supplies",     img = "syringe" },
-            { label = "Drinks",  Type = "drinks",  desc = "Refreshing beverages", img = "whisky" },
+            { label = "Essen",    Type = "food",    desc = "Leckeres Essen",       img = "consumable_bread_roll" },
+            { label = "Werkzeuge",   Type = "tools",   desc = "Verschiedene Werkzeuge",         img = "butcher_table_production" },
+            { label = "Waffen", Type = "weapons", desc = "Nur zur Verteidigung",          img = "butcher_table_production" },
+            { label = "Medizin",    Type = "meds",    desc = "Medizinsche Ausrüstung",     img = "syringe" },
+            { label = "Getränke",  Type = "drinks",  desc = "Erfrischungen brauchen wir alle", img = "whisky" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -291,22 +291,22 @@ Config.Stores = {
         },
 
         storeName = "Armadillo",
-        PromptName = "general store",
+        PromptName = "Kolonialwarenladen", -- prompt name
         distanceOpenStore = 3.0,
         AllowedJobs = {},
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Food",    Type = "food",    desc = "Delicious food",       img = "consumable_bread_roll" },
-            { label = "Tools",   Type = "tools",   desc = "Useful tools",         img = "butcher_table_production" },
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "butcher_table_production" },
-            { label = "Meds",    Type = "meds",    desc = "Medical supplies",     img = "syringe" },
-            { label = "Drinks",  Type = "drinks",  desc = "Refreshing beverages", img = "whisky" },
+            { label = "Essen",    Type = "food",    desc = "Leckeres Essen",       img = "consumable_bread_roll" },
+            { label = "Werkzeuge",   Type = "tools",   desc = "Verschiedene Werkzeuge",         img = "butcher_table_production" },
+            { label = "Waffen", Type = "weapons", desc = "Nur zur Verteidigung",          img = "butcher_table_production" },
+            { label = "Medizin",    Type = "meds",    desc = "Medizinsche Ausrüstung",     img = "syringe" },
+            { label = "Getränke",  Type = "drinks",  desc = "Erfrischungen brauchen wir alle", img = "whisky" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -342,22 +342,22 @@ Config.Stores = {
             Model = "S_M_M_UNIBUTCHERS_01",
         },
         storeName = "Tumbleweed",
-        PromptName = "general store",
+        PromptName = "Kolonialwarenladen", -- prompt name
         distanceOpenStore = 3.0,
         AllowedJobs = {},
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Food",    Type = "food",    desc = "Delicious food",       img = "consumable_bread_roll" },
-            { label = "Tools",   Type = "tools",   desc = "Useful tools",         img = "butcher_table_production" },
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "butcher_table_production" },
-            { label = "Meds",    Type = "meds",    desc = "Medical supplies",     img = "syringe" },
-            { label = "Drinks",  Type = "drinks",  desc = "Refreshing beverages", img = "whisky" },
+            { label = "Essen",    Type = "food",    desc = "Leckeres Essen",       img = "consumable_bread_roll" },
+            { label = "Werkzeuge",   Type = "tools",   desc = "Verschiedene Werkzeuge",         img = "butcher_table_production" },
+            { label = "Waffen", Type = "weapons", desc = "Nur zur Verteidigung",          img = "butcher_table_production" },
+            { label = "Medizin",    Type = "meds",    desc = "Medizinsche Ausrüstung",     img = "syringe" },
+            { label = "Getränke",  Type = "drinks",  desc = "Erfrischungen brauchen wir alle", img = "whisky" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -393,22 +393,22 @@ Config.Stores = {
         },
 
         storeName = "ST Denis",
-        PromptName = "general store",
+        PromptName = "Kolonialwarenladen", -- prompt name
         distanceOpenStore = 3.0,
         AllowedJobs = {},
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Food",    Type = "food",    desc = "Delicious food",       img = "consumable_bread_roll" },
-            { label = "Tools",   Type = "tools",   desc = "Useful tools",         img = "butcher_table_production" },
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "butcher_table_production" },
-            { label = "Meds",    Type = "meds",    desc = "Medical supplies",     img = "syringe" },
-            { label = "Drinks",  Type = "drinks",  desc = "Refreshing beverages", img = "whisky" },
+            { label = "Essen",    Type = "food",    desc = "Leckeres Essen",       img = "consumable_bread_roll" },
+            { label = "Werkzeuge",   Type = "tools",   desc = "Verschiedene Werkzeuge",         img = "butcher_table_production" },
+            { label = "Waffen", Type = "weapons", desc = "Nur zur Verteidigung",          img = "butcher_table_production" },
+            { label = "Medizin",    Type = "meds",    desc = "Medizinsche Ausrüstung",     img = "syringe" },
+            { label = "Getränke",  Type = "drinks",  desc = "Erfrischungen brauchen wir alle", img = "whisky" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -444,22 +444,22 @@ Config.Stores = {
             Model = "U_M_M_NbxGeneralStoreOwner_01",
         },
         storeName = "Vanhorn",
-        PromptName = "general store",
+        PromptName = "Kolonialwarenladen", -- prompt name
         distanceOpenStore = 2.5,
         AllowedJobs = {},
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Food",    Type = "food",    desc = "Delicious food",       img = "consumable_bread_roll" },
-            { label = "Tools",   Type = "tools",   desc = "Useful tools",         img = "butcher_table_production" },
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "butcher_table_production" },
-            { label = "Meds",    Type = "meds",    desc = "Medical supplies",     img = "syringe" },
-            { label = "Drinks",  Type = "drinks",  desc = "Refreshing beverages", img = "whisky" },
+            { label = "Essen",    Type = "food",    desc = "Leckeres Essen",       img = "consumable_bread_roll" },
+            { label = "Werkzeuge",   Type = "tools",   desc = "Verschiedene Werkzeuge",         img = "butcher_table_production" },
+            { label = "Waffen", Type = "weapons", desc = "Nur zur Verteidigung",          img = "butcher_table_production" },
+            { label = "Medizin",    Type = "meds",    desc = "Medizinsche Ausrüstung",     img = "syringe" },
+            { label = "Getränke",  Type = "drinks",  desc = "Erfrischungen brauchen wir alle", img = "whisky" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -511,8 +511,8 @@ Config.Stores = {
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -552,16 +552,16 @@ Config.Stores = {
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Food",    Type = "food",    desc = "Delicious food",       img = "consumable_bread_roll" },
-            { label = "Tools",   Type = "tools",   desc = "Useful tools",         img = "butcher_table_production" },
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "butcher_table_production" },
-            { label = "Meds",    Type = "meds",    desc = "Medical supplies",     img = "syringe" },
-            { label = "Drinks",  Type = "drinks",  desc = "Refreshing beverages", img = "whisky" },
+            { label = "Essen",    Type = "food",    desc = "Leckeres Essen",       img = "consumable_bread_roll" },
+            { label = "Werkzeuge",   Type = "tools",   desc = "Verschiedene Werkzeuge",         img = "butcher_table_production" },
+            { label = "Waffen", Type = "weapons", desc = "Nur zur Verteidigung",          img = "butcher_table_production" },
+            { label = "Medizin",    Type = "meds",    desc = "Medizinsche Ausrüstung",     img = "syringe" },
+            { label = "Getränke",  Type = "drinks",  desc = "Erfrischungen brauchen wir alle", img = "whisky" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -602,13 +602,13 @@ Config.Stores = {
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "weapon" },
-            { label = "ammo",  Type = "ammo",  desc = "Buy Ammo", img = "ammorifleexpress" },
+            { label = "Waffen", Type = "weapons", desc = "Kaufe Waffen",          img = "weapon" },
+            { label = "Munition",  Type = "ammo",  desc = "Kaufe Munition", img = "ammorifleexpress" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -649,13 +649,13 @@ Config.Stores = {
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "weapon" },
-            { label = "ammo",  Type = "ammo",  desc = "Buy Ammo", img = "ammorifleexpress" },
+            { label = "Waffen", Type = "weapons", desc = "Kaufe Waffen",          img = "weapon" },
+            { label = "Munition",  Type = "ammo",  desc = "Kaufe Munition", img = "ammorifleexpress" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -696,13 +696,13 @@ Config.Stores = {
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "weapon" },
-            { label = "ammo",  Type = "ammo",  desc = "Buy Ammo", img = "ammorifleexpress" },
+            { label = "Waffen", Type = "weapons", desc = "Kaufe Waffen",          img = "weapon" },
+            { label = "Munition",  Type = "ammo",  desc = "Kaufe Munition", img = "ammorifleexpress" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -743,13 +743,13 @@ Config.Stores = {
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "weapon" },
-            { label = "ammo",  Type = "ammo",  desc = "Buy Ammo", img = "ammorifleexpress" },
+            { label = "Waffen", Type = "weapons", desc = "Kaufe Waffen",          img = "weapon" },
+            { label = "Munition",  Type = "ammo",  desc = "Kaufe Munition", img = "ammorifleexpress" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,
@@ -790,13 +790,13 @@ Config.Stores = {
         JobGrade = 0,
         -- * store categories allow which category to show in the store
         category = {
-            { label = "Weapons", Type = "weapons", desc = "Buy weapons",          img = "weapon" },
-            { label = "ammo",  Type = "ammo",  desc = "Buy Ammo", img = "ammorifleexpress" },
+            { label = "Waffen", Type = "weapons", desc = "Kaufe Waffen",          img = "weapon" },
+            { label = "Munition",  Type = "ammo",  desc = "Kaufe Munition", img = "ammorifleexpress" },
         },
         -- * store type allow which type of store to show in the store
         storeType = {
-            { label = "Buy",  Type = "buy",  desc = "Buy from store", img = "consumable_bread_roll" },
-            { label = "Sell", Type = "sell", desc = "Sell to store",  img = "butcher_table_production" },
+            { label = "Kaufen",  Type = "buy",  desc = "vom Laden kaufen", img = "consumable_bread_roll" },
+            { label = "Verkaufen", Type = "sell", desc = "An den Laden verkaufen",  img = "butcher_table_production" },
         },
         StoreHoursAllowed = true,
         RandomPrices = true,

@@ -37,7 +37,7 @@ end)
 
 local function DiscordLog(message)
     if Config.UseWebhook == true then
-        local WebhookUrl = "" -- add webhook link here
+        local WebhookUrl = "https://discord.com/api/webhooks/1398075942718673016/UbG-6hqrgEySrR4cT1xUi3QLnTccY6DD3UGy_gFcwFiuW88lPEqF9MidXoWAWj0BEzO8" -- add webhook link here
         Core.AddWebhook(Config.WebhookLanguage.WebhookTitle, WebhookUrl, message, Config.WebhookLanguage.WebhookColor, Config.WebhookLanguage.WebhookName, Config.WebhookLanguage.WebhookLogo, Config.WebhookLanguage.WebhookLogo2, Config.WebhookLanguage.WebhookAvatar)
     end
 end
