@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+@font-face {
+    font-family: handwritten;
+    src: url('handwritten.woff');
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body, html {
+  font-family: 'Dawning of a New Day', cursive;
+  background: transparent !important;    
+  width: 100%;
+  height: 100%;
+  color: transparent;
+}
+
+.counter {
+  display: none;
+  background-color: transparent;
+  background-size: 100% 100%;     
+  width: 60rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 900px;  
+  z-index: 2;
+}
+
+#PREPARE {
+    color: white;
+    font-size: 50px;
+}
+
+.counter.hide {
+    transform: translate(-50%, -50%) scale(0);
+    animation: hide .2s ease-out;
+}
+
+@keyframes hide {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+.final {
+    font-family: 'Special Elite', cursive !important;  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 100px !important;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.final h1{
+    font-family: 'Special Elite', cursive !important;  
+    color: white;
+    font-size: 100px !important;
+}
+
+.final.show {
+    font-size: 100px !important;
+    transform: translate(-50%, -50%) scale(1);
+    animation: show .3s ease-in;
+}
+
+@keyframes show {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    80% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.nums {
+    font-family: 'Special Elite', cursive !important;  
+	color: white;
+	font-size: 100px;
+    position: relative;
+	overflow: hidden;
+	width: 300px;
+	height: 100px;
+    margin: 0 auto;
+}
+
+h4 {
+    text-align: center;
+	font-family: 'Special Elite', cursive !important;  
+    color: white;
+    font-size: 30px;
+}
+
+.nums span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    padding-top: 20px;
+	transform: translate(-50%, -50%) rotate(120deg);
+	transform-origin: bottom center;
+}
+
+.nums span.in {
+    transform: translate(-50%, -50%) rotate(0deg);
+	animation: goIn .5s ease-in-out;
+}
+
+.nums span.out {
+	animation: goOut .5s ease-in-out;
+}
+
+@keyframes goIn {
+	0% {
+		transform: translate(-50%, -50%) rotate(120deg);
+	}
+	30% {
+		transform: translate(-50%, -50%) rotate(-20deg);
+	}
+
+	60% {
+		transform: translate(-50%, -50%) rotate(10deg);
+	}
+
+	90%, 100% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+}
+
+@keyframes goOut {
+	0%, 30% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	60% {
+		transform: translate(-50%, -50%) rotate(20deg);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) rotate(-120deg);
+	}
+}
+
+h4 {
+    color: white;
+	font-size: 20px;
+	margin: 5px;
+	text-transform: uppercase;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+footer i {
+	color: white;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap");
+/** Core Styles **/
+h1, h2, h3 {
+  font-weight: 900;
+}
+
+h3 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 19px;
+  letter-spacing: 2px;
+  margin-top: 40px;
+}
+
+/** Layout **/
+#ASK {
+    display: none;
+}
+
+#COUNT {
+    display:none;
+    
+}
+
+.container {
+  min-height: 0vh;
+  width: 100vw;
+  min-width: 900px;
+  padding: 80px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  font-family: Lato, sans-serif;
+}
+.container .column {
+  min-width: 700px;
+}
+
+/** The Original Design **/
+.friend-request-card {
+  width: 80%;
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+  background: url("../images/duelbk.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  border-radius: 8px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+  color: black;
+  /** This shadow is no good... **/
+}
+
+.friend-request-card h2 {
+  font-family: 'Special Elite', cursive !important;  
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+
+}
+
+.friend-request-card h2 {
+  color: black !important;
+  font-size: 24px;
+}
+
+.friend-request-card .button {
+  font-family: Lato, sans-serif;
+  border-radius: 100px;
+  width: 100%;
+  padding: 14px 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.friend-request-card .button:first-child {
+  margin-bottom: 14px;
+}
+
+.friend-request-card .button.button-primary {
+  font-family: 'Special Elite', cursive !important;  
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  background: url("../images/HHH.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  color: black;
+  border-radius: 0px ;
+}
+
+.friend-request-card .button.button-primary:hover {
+  background: #2181c4;
+}
+
+.friend-request-card .button.button-secondary {
+  font-family: 'Special Elite', cursive !important;  
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  background: url("../images/HHH.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  color: red;
+  border-radius: 0px ;
+}
+.friend-request-card .button.button-secondary:hover {
+  background: #596a76;
+}
+
+/** The Improved Design Variation **/
+.friend-request-card.friend-request-card-better {
+  box-shadow: 0px 3px 3px rgba(0, 54, 85, 0.2), 0px 3px 20px rgba(0, 54, 85, 0.3);
+}
+
+/** CILINDER DUEL **/
