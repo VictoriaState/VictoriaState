@@ -1,0 +1,530 @@
+/* POWERED BY SIREC STUDIO @ 2022 */
+@font-face {
+    font-family: handwritten;
+    src: url('handwritten.woff');
+}
+@font-face {
+    font-family: justsignature;
+    src: url('JustSignature.woff');
+}
+
+:root{
+	--space: 5.8%;
+}
+
+body, html {
+  font-family: 'Dawning of a New Day', cursive;
+  background: transparent !important;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+#RIGHT {
+display: none;
+float: right;
+width: 100px;
+height: 100px;
+margin-top: 15%;
+margin-right: 15%;
+}
+
+#CENTER {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#first-name { /* FIRSTNAME */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 110px;
+  margin-top: 23px;
+  width: 60%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#last-name { /* LASTNAME */ 
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 50px;
+  margin-top: 0px;
+  width: 70%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#dob { /* DOB */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 120px;
+  margin-top: 0px;
+  width: 50%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#city { /* CITY */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 80px;
+  margin-top: 0px;
+  width: 55%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#eyes { /* EYES */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 100px;
+  margin-top: 55px;
+  width: 20%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#hair { /* HAIR */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 70px;
+  margin-top: 55px;
+  width: 20%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#weight { /* WEIGHT */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 60px;
+  margin-top: 0px;
+  width: 20%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#height { /* HEIGHT */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 50px;
+  margin-top: 0px;
+  width: 20%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#sex { /* SEX */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 30px;
+  margin-top: 0px;
+  width: 10%;
+  height: var(--space);  
+  margin-bottom: -0px !important;
+}
+
+#job { /* JOB */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 110px;
+  margin-top: 0px;
+  width: 55%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#date { /* REG DATE */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 120px;
+  margin-top: 50px;
+  width: 50%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#nrid { /* ID NR */
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 130px;
+  margin-top: 0px;
+  width: 50%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#nrid2 { /* ID NR */
+  position: relative;     
+  font-family: handwritten;
+  float: left;
+  font-weight: bold;
+  font-size: 40px;
+  color: #030a59;
+  margin-left: 100px;
+  margin-top: 330px;
+  z-index:5;      
+}
+
+#sign { /* SIGN 1 */
+  font-family: justsignature;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #030a59;
+  margin-left: 100px;
+  margin-top: 40px;
+  width: 70%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#potrait { /* MAIN PAPER 2 */
+  position:absolute;    
+  display: none;  
+  width: 100%;
+  height: 100%;  
+  background-image: url("../images/idleft2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  z-index:4;     
+}
+
+#potrait2 { /* MAIN PAPER 3 */
+  position: absolute;
+  display: none;
+  float: left;    
+  width: 180px;
+  height: 260px;  
+  margin-left: 67px;
+  margin-top: 96px;
+  z-index:3;
+    border: 2px solid black;
+}
+
+#sign2 { /* SIGN 2 */
+  font-family: justsignature;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #030a59;
+  margin-top: 20px;
+  width: 100%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+}
+
+#submit {
+    position: relative;  
+    float: right; 
+    background: transparent;
+	background-image: url("../images/sign.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+	width: 100px;
+	height: 90px;
+    margin-top: 0px;
+    margin-right: 50px;  
+    outline: none !important;
+    border: none !important;
+}
+
+#update {
+	font-family: handwritten;
+    color: black;
+    font-size: 25px;
+	font-weight: bold;
+    position: relative;  
+    float: right; 
+    background: transparent;
+	background-image: url("../images/sign.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+	width: 100px;
+	height: 90px;
+    margin-top: 0px;
+    margin-right: 50px;  
+    outline: none !important;
+    border: none !important;
+}
+
+#serversign {
+  position: relative;  
+  font-family: justsignature;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #030a59;
+  margin-left: 60px;
+  margin-top: 380px;
+  width: 60%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+  z-index:99999999;
+-moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+  direction: rtl;
+}
+
+#imageinput { /* FIRSTNAME */
+  position: relative;  
+  font-family: handwritten;
+  float: left;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030a59;
+  margin-left: 60px;
+  margin-top: 360px;
+  width: 60%;
+  height: var(--space);
+  margin-bottom: -0px !important;
+  z-index:99999999;  
+-moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+  direction: rtl;
+}
+
+#submitfake {
+    position: relative;  
+    float: right; 
+    background: transparent;
+	background-image: url("../images/sign.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+	width: 100px;
+	height: 90px;
+    margin-top: 0px;
+    margin-right: 50px;  
+    outline: none !important;
+    border: none !important;
+}
+
+#IDCARD {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 500px;
+  backface-visibility: visible;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+  white-space: nowrap;
+}
+
+.front, .back, .page1, #page2 {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 320px;
+  height: 100%;
+  top: 0; left: 0;
+  transform-origin: left center;
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+}
+
+.front {
+  background-image: url("../images/coverid.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.back {
+  background-image: url("../images/coverid.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+}
+
+.front, .page1, .page3, .page5 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.back, #page2, .page4, .page6 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.page1 { 
+  background: url("../images/idleft.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+#page2 {
+  background: url("../images/idright.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.openfront {
+  animation: openfront 2s normal forwards ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1
+}
+
+@keyframes openfront {
+  from {transform: rotateY(0deg) scale(1.0);}
+  to {transform: rotateY(-151deg) scale(1.0);}
+}
+
+.openpage1 {
+  animation: openpage1 2s normal forwards ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1
+}
+
+@keyframes openpage1 {
+  from {transform: rotateY(0deg) scale(1.0)}
+  to {transform: rotateY(-150deg) scale(1.0)}
+}
+
+.openpage2 {
+  animation: openpage2 2s normal forwards ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1
+}
+
+@keyframes openpage2 {
+  from {transform: rotateY(0deg) scale(1.0)}
+  to {transform: rotateY(-30deg) scale(1.0)}
+}
+
+.openback {
+  animation: openback 2s normal forwards ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1
+}
+
+@keyframes openback {
+  from {transform: rotateY(0deg) scale(1.0)}
+  to {transform: rotateY(-29deg) scale(1.0)}
+}
+
+.closefront {
+  animation: closefront 2s normal forwards ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1
+}
+
+@keyframes closefront {
+	from {transform: rotateY(-151deg) scale(1.0);}
+	to {transform: rotateY(0deg) scale(1.0)}
+}
+
+.closepage1 {
+  animation: closepage1 2s normal forwards ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1
+}
+
+@keyframes closepage1 {
+	from {transform: rotateY(-150deg) scale(1.0);}
+	to {transform: rotateY(0deg) scale(1.0)}
+}
+
+.closepage2 {
+  animation: closepage2 2s normal forwards ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1
+}
+
+@keyframes closepage2 {
+	from {transform: rotateY(-30deg) scale(1.0);}
+	to {transform: rotateY(0deg) scale(1.0)}
+}
+
+.closeback {
+  animation: closeback 2s normal forwards ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1
+}
+
+@keyframes closeback {
+	from {transform: rotateY(-29deg) scale(1.0);}
+	to {transform: rotateY(0deg) scale(1.0)}
+}
+
+::placeholder {
+  color: red;
+  opacity: 1; 
+}
+
+.stamp{
+    position: absolute;
+    float: right;
+    width: 120px;
+    height: 40px;
+    right: 5%;
+    bottom: 12%;
+    z-index: 9999999999999999999;
+	transform: rotate(-10deg)
+}
+
+
+/* POWERED BY SIREC STUDIO @ 2022 */
