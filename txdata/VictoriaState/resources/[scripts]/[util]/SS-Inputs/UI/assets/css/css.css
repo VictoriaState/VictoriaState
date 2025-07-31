@@ -1,0 +1,127 @@
+@font-face {
+    font-family: MAINFONT;
+    src: url('font.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.root-wrapper {
+    width: 40vw;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    overflow: hidden;
+    background: transparent !important;
+}
+
+html,
+body {
+    background: transparent !important;
+}
+
+.main-wrapper {
+    width: 40%;
+    height: auto;
+    background: url("../img/bk.png");
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    overflow: hidden;
+    padding: 1.5rem;
+    display: none;
+    border-radius: 0.4vw;
+    user-select: none;
+}
+
+.header {
+    width: 100%;
+    max-width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    overflow: wrap;
+    color: black;
+}
+
+.header h1 {
+    font-family: MAINFONT;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 999;
+    position: relative;
+    
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    min-height: 10%;
+    max-height: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.body label {
+    font-family: MAINFONT;
+    font-size: 0.9rem;
+    color: black;
+    margin-top: 0.1em;
+}
+
+.body input[type="text"] {
+    font-family: MAINFONT;
+    height: 30px;
+    background-color: rgb(0.0, 0.0, 0.0, 0.3);
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+    color: black;
+    border: 50%;
+}
+
+.body input[type="text"]:focus {
+    color: black;
+}
+
+.body select {
+    background: lightgreen;
+    color: lightgreen;
+    border: 50%;
+}
+
+.body option {
+    background: red;
+    color: red;
+    padding: 1rem 0;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.btn {
+    font-family: MAINFONT;
+    font-weight: bold;
+    background: url("../img/HHH.png");
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
