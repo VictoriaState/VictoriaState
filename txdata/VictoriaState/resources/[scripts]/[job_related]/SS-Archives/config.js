@@ -1,0 +1,106 @@
+TR = {
+        
+// MAIN
+DATA : "DATUM: ",
+MAINTITTLE : "Sheriff Archiv",
+DCASE: "Fallbeschreibung...",
+CRJA: "Verbrechen / Gefängnis?",
+JTIME: "Haftdauer...",
+FAMOUNT: "Bußgeldhöhe...",
+BAMOUNT: "Kopfgeldhöhe...",
+AJAIL: "Automatisch ins Gefängnis?",  
+AJAIL2: "Direkt nach Sisika-Gefängnis schicken!",
+PCASE: "STRAFVERFAHREN?",
+PCASE1: "Wenn NEIN, wird nach Zahlung der Geldstrafe entfernt!",
+ADDNOTES1: "Anmerkungen zu dieser Person?",
+ADDNOTES2: "Notizen hinzufügen...",
+REMNOTES: "ENTFERNEN",
+LOCK: "SPERREN",
+UNLOCK: "ENTSperren",    
+
+// SUCHSEITE
+RESULTITTLE : "Suchergebnisse",
+SEARCHTITTLE : "Bürger suchen",    
+SFIRSTNAME : "Vorname: ",
+SFIRSTNAME2 : "Nach Namen suchen...",
+SLASTNAME : "Nachname: ", 
+SLASTNAME2 : "Nach Vornamen suchen...",
+SDOB : "Geburtsdatum: ", 
+SDOB2 : "Nach Geburtsdatum suchen...",
+SDOSSIER : "Akte-ID: ",
+SDOSSIER2 : "Nach Akte suchen...",
+FIRSTNAME : "Vorname",
+LASTNAME : "Nachname",
+    
+// BUTTONS        
+SEARCHBUTTON : "Suche starten",
+CLOSEBUTTON : "Schließen",
+DELETEBUTTON : "LÖSCHEN",
+ADDDOSSIER : "AKTE UNTERZEICHNEN",
+REGISTERTAB : "Identität erstellen",
+SEARCHTAB : "Suche",
+DOSSIERSTAB : "AKTEN",
+        
+// EIGENTUMSSEITE
+PROPERTY : "EIGENTUM",
+        
+// AKTE ANZEIGEN
+DOSSIER : "AKTE: ",
+CITIZEN : "BÜRGER: ",
+DOB : "GEBURTSDATUM: ",
+BOUNTY : "KOPFGELD: ",
+CHARGE : "STRAFTAT: ",
+JAIL : "GEFÄNGNIS: ",
+FINE : "GELDSTRAFE: ",
+DATE : "REGISTRIERT AM: ",
+CRIMECITY : "TATORT: ",
+DESCRIPTION : "BESCHREIBUNG: ",
+        
+// EIGENTUM IN DER AKTE
+PTITTLE1 : "REGISTRIERTES EIGENTUM",
+        
+// BÜRGER AKTE
+UTITTLE : "IDENTITÄTSNUMMER: ",
+UNAME : "NAME: ",
+UDOB : "GEBURTSDATUM: ",
+USEX : "GESCHLECHT: ",
+UCM : "GRÖSSE (cm): ",
+UKG : "GEWICHT (kg): ",
+UEYES : "Augenfarbe: ",
+UHAIR : "Haarfarbe: ",
+UFINES : "Alle Geldstrafen: ",
+UREGISTERED : "Registriert am: ",
+UCITY : "STADT: ",
+UDOSSIERS : "BÜRGERAKTEN",
+        
+// AKTE HINZUFÜGEN
+DOSSIERTITTLE : "AKTE HINZUFÜGEN: ",
+ADOSSIER : "STRAFTAT",
+AJAIL : "GEFÄNGNIS",
+AFINE : "GELDSTRAFE",
+ABOUNTY : "KOPFGELD",
+ADESCRIPTION : "Aktebeschreibung: ",
+ADESCRIPTION2 : "Fall beschreiben...",   
+        
+// BÜRGER REGISTRIEREN
+RTITTLE : "IDENTITÄT REGISTRIEREN",
+RID : "BÜRGER-ID",
+RDAY : "GEBURTSTAG",
+EXRDAY: "Geburtstag, z. B. 05!",
+RMONTH : "GEBURTSMONAT",
+EXRMONTH : "Geburtsmonat, z. B. 08!",
+RAGE : "BÜRGERALTER",
+EXRAGE: "Alter des Bürgers, z. B. 44!",
+REYES : "AUGENFARBE",
+EXREYES: "Augenfarbe des Bürgers...",    
+RHAIR : "HAARFARBE",
+EXRHAIR: "Haarfarbe des Bürgers...",
+RKG : "GEWICHT (kg)",
+EXRKG: "Gewicht des Bürgers...",
+RCM : "GRÖSSE (cm)",
+EXRCM: "Größe des Bürgers...",
+RCITY : "GEBURTSORT",
+EXRCITY: "Geburtsstadt des Bürgers!",    
+RIMAGE : "BILD DES BÜRGERS",
+EXRIMAGE: "Foto des Bürgers...",
+}
