@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script  src="../config.js"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/css.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="js/materialize.js" type="text/javascript"></script>
+    <script src="js/js.js" type="text/javascript"></script>
+  </head>
+<body>
+
+<div id="wrapper" class="home">
+<div id="book">
+		<div id="stack">
+        	<a id="blog-paper">
+          		<h2 id="DOSSIERS"></h2>
+        	</a>
+		</div>
+		<div id="back-cover" class="cover"></div>
+        <div id="home-contact">
+          <a id="card" class="card">
+          	<h2 id="contact-line"></h2>
+          </a>
+        </div>
+<div id="paper-front" class="paper">
+	<div id="INFOTABLE">
+		<h1>AAAAAAA</h1>
+        	<input type="text" id="filterdossiers" placeholder="Search Dossiers...">
+            <table class="centered" id="table1"> 
+            	<thead>
+          			<tr>
+              			<th>Hystory</th>
+          			</tr>
+        		</thead>
+               <tbody>
+               </tbody>
+             </table>
+	</div>
+    
+    <div id="PROPERTY">
+		<h1>AAAAAAA</h1>
+        	<input type="text" id="filterproperty" placeholder="Search Medic...">
+            <table class="centered" id="table2"> 
+            	<thead>
+          			<tr>
+              		<th>MEDIC</th>
+              		<th>REVIVE</th>
+                    <th>INFUSION</th>
+                    <th>DISEASE</th>
+					<th>MONEY</th>
+					<th>MISSIONS</th>
+					<th>ALERTS</th>
+          			</tr>
+        		</thead>
+               <tbody>
+               </tbody>
+             </table>
+	</div>
+    
+	<div id="SEARCH">
+		<h1></h1>
+        
+		<form class="col s12">
+		<div class="row">
+            
+                <div class="input-field col s6">
+                  <p for="firstname-search" id="SFIRTSTNAME"></p>
+                  <input id="firstname-search" type="text" class="validate">
+                  <span class="helper-text" data-error="wrong" data-success="right" >Searh firstname...</span>
+                </div>
+            
+                <div class="input-field col s6">
+                  <p for="lastname-search" id="SLASTNAME"></p>
+                  <input id="lastname-search" type="text" class="validate">
+                  <span class="helper-text" data-error="wrong" data-success="right">Search lastname...</span>
+                </div>
+            
+                <div class="input-field col s6">
+                  <p for="dob-search" id="SDOB"></p>
+                  <input id="dob-search" type="text" class="validate">
+                  <span class="helper-text" data-error="wrong" data-success="right">Search DOB...</span>
+                </div>
+            
+                <div class="input-field col s6">
+                  <p for="offense-search" id="SDOSSIER">Dosar ID</p>
+                  <input id="offense-search" type="text" class="validate">
+				  <span class="helper-text" data-error="wrong" data-success="right">Search dossier ID...</span>
+                </div>
+            
+		</div>
+		</form>
+	</div>
+    
+    <div id="SEARCHRESULT">
+        <h1></h1>
+        
+            <table class="centered">
+            	<thead>
+          			<tr>
+              		<th>FIRSTNAME</th>
+              		<th>LASTNAME</th>
+              		<th>DOB</th>
+          			</tr>
+        		</thead>
+               <tbody>
+               </tbody>
+             </table>
+             <p>Searching...</p>
+	</div>
+    
+    <div id="DOSSIERUSER">
+        <h1></h1>
+    	<div id="BOXINFO" class="SEARCHCLASS">
+			<div id="basic-info">
+            	<img src="images/nophoto.png" alt="avatar" draggable="false" class="avatar" onerror="src='images/nophoto.png'"/>
+            	<ul>
+                <li id="d-citizen"></li>
+              	<li id="d-udob"></li>
+              	<li id="d-sex"></li>
+              	<li id="d-height"></li>                
+              	<li id="d-weight"></li>  
+              	<li id="d-eyecolor"></li> 
+              	<li id="d-haircolor"></li>              
+              	<li id="d-allfines"></li>
+              	<li id="d-registered"></li> 
+              	<li id="d-city"></li> 
+             	<div id="BOXRECORDS" class="BOXRECORDS">
+        			<p id="UDOSSIERS"></p>
+        		</div>
+            	</ul>
+                
+          	</div>
+            <table class="centered" cellspacing="0" cellpadding="0" id="dossierUsertable">
+                <thead>
+          			<tr>
+              		<th>DATE</th>
+              		<th>CHARGE</th>
+                    <th>FINE</th>
+          			</tr>
+        		</thead>
+               <tbody>
+               </tbody>
+             </table>
+        </div>
+	</div>
+    
+    <div id="ADDDOSSIER">
+        <h1>ADAUGA DOSAR</h1>
+        <p class="error">Error - No person was found, first name, last name or dob could be wrong</p>
+		<form class="col s12">
+		<div class="row">
+            
+                <div class="input-field col s6">
+                  <p for="offense-search" id="ADOSSIER"></p>
+                  <input id="charge-add" type="text" class="validate" required>
+				  <span class="helper-text" data-error="wrong" data-success="right">Medical record name...</span>
+                </div>
+            
+                <div class="input-field col s6">
+                  <p for="offense-search" id="AJAIL"></p>
+                  <input id="jail-add" type="number" value="0" class="validate" required>
+				  <span class="helper-text" data-error="wrong" data-success="right">Hospitalization Time ?</span>
+                </div>
+            
+            	<div class="input-field col s6">
+                	<p for="autojail">
+      					<label>
+        					<input type="checkbox" class="filled-in" id="auto-jail" value="autojail"/>
+        					<span class="helper-text" data-error="wrong" data-success="right">DISEASES ?</span>
+                            <span class="helper-text" data-error="wrong" data-success="right">Check the person if have any disease and help him !</span>
+      					</label>
+    				</p>
+            	</div>
+                <div class="input-field col s6">
+                	<p for="penal">
+      					<label>
+        					<input type="checkbox" class="filled-in" id="penal" value="penal"/>
+        					<span class="helper-text" data-error="wrong" data-success="right">INFUSION ?</span>
+                            <span class="helper-text" data-error="wrong" data-success="right">If NO INFUSION only will heal player !</span>
+      					</label>
+    				</p>
+            	</div>
+            
+        		<div class="input-field col s12">
+                    <p for="offense-search" id="ADESCRIPTION"></p>
+          			<textarea id="description-add" class="materialize-textarea" required></textarea>
+                    <span class="helper-text" data-error="wrong" data-success="right">Write medical notes...</span>
+        		</div>
+		</div>
+		</form>
+        <div>
+        </div>
+	</div>
+    
+    <div id="DOSSIERPAGE">
+    	<h1></h1>
+    	<div id="BOXINFO" class="SEARCHCLASS">
+			<div id="basic-info">
+            	<img src="images/nophoto.png" alt="avatar" draggable="false" class="avatar" onerror="src='images/nophoto.png'"/>
+            	<ul>
+                <li id="d-charge"></li> 
+                <li id="d-username"></li>
+              	<li id="d-dob"></li>
+              	<li id="d-bounty"></li>
+              	<li id="d-hospitalization"></li>  
+              	<li id="d-fine"></li> 
+              	<li id="d-date"></li> 
+             	<div id="BOXRECORDS" class="BOXRECORDS">
+        			<p>DESC</p>
+                    <div id="DESC">Dossier Description</div>
+                    <div id="OFFICERSIGN">Doctor's signature</div>
+        		</div>
+            	</ul>
+          	</div>
+				
+
+        </div>  
+	</div>
+        </div>
+
+        	<div id="home-nav">
+          		<a id="SEARCHTAB" class="nav" ></a>
+          		<a id="CLOSEBUTTON" class="nav back-two"></a>
+                <a id="SEARCHBUTTON" class="nav back-two"></a>
+                <a id="DELETEBUTTON" class="nav back-two"></a>
+                <a id="CREATEBUTTON" class="nav back-two">ADD IDENTITY</a>
+                <a id="ADDBUTTON" class="nav back-two">ADD DOSSIER</a>
+                <a id="ADDBUTTON2" class="nav back-two">ADD DOSSIER</a>
+        	</div>
+    
+        	<div id="front-cover" class="cover">
+        		<h1 class="hidden">BSN Design</h1>
+            	<p></p>
+        	</div>
+    
+        	<div id="elastic-verytop" class="elastic"></div>
+        		<div id="elastic-top-box">
+          			<div id="elastic-top" class="elastic"></div>
+        		</div>
+        	<div id="elastic-main" class="elastic"></div>
+</div>
+</div>
+   
+</body>
+</html>
