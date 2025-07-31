@@ -5,7 +5,7 @@ author 'SIREC'
 description 'SS-Core'
 code 'SSCORE'
 version '2.3'
-framework "vorp" -- USE vorp/rsg/rsgv1/redemrp/tpz !
+framework 'vorp' -- USE vorp/rsg/rsgv1/redemrp/tpz !
 lua54 'yes'
 
 ui_page 'UI/UI.html'

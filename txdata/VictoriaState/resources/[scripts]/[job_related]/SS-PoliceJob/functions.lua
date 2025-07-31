@@ -14,7 +14,7 @@ end
 
 function CLOAKROOM() -- if you wanna use a cloak room ! (ClothingScript = true in config)
 	--TriggerEvent('syn_clothing:OpenOutfits')
-	--TriggerEvent('kd_clothingstore:openWardrobe')
+	TriggerEvent('kd_clothingstore:openWardrobe')
     --TriggerEvent("sirevlc_law_and_order_menu")
 end    
 
