@@ -1,0 +1,73 @@
+<html>
+<head>
+    <link href="css/materialize.css" rel="stylesheet" type="text/css">
+    <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <script src="js/materialize.js" type="text/javascript"></script>
+    <script src="js/materialize.min.js" type="text/javascript"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="MAIN">
+        <div id="top-section">
+            <!-- Butonul de Help -->
+            <div id="help-button">?</div>
+            <div class="image-table">
+                <img src="./img/aws1.png" alt="Image 1">
+            </div>
+            <div class="image-table2">
+                <img src="./img/logo.png" alt="Image 2">
+            </div>
+            <div class="image-table2">
+                <img src="./img/blogo.png" alt="Image 2">
+            </div>
+            <div class="image-table">
+                <img src="./img/aws2.png" alt="Image 3">
+            </div>
+        </div>
+        <!-- Search Filter -->
+        <div id="search-section">
+            <div id="status-container">
+                <div id="status-indicator"></div>
+                <div id="status-text">Offline</div>
+            </div>
+            <input type="text" id="search-input" placeholder="Search assets..." />
+        </div>
+        
+        <div id="bottom-section">
+
+        </div>
+        <div id="aws-logo-container">
+            <img src="./img/aws.png" alt="AWS Logo" id="aws-logo">
+        </div>
+    </div>
+
+    <!-- Fereastra de Help/Instrucțiuni -->
+    <div id="help-window">
+        <div id="help-content">
+            <h2>How to use</h2>
+            <p>! You Don't need add the scripts in server.cfg to ensure/start it, you need ensure/stop them from this dashboard. Once finish to setup it you can activate AutoStart from config, and they will start in right order themselve ! </p>
+            <ul>
+                <li>ENSURE BUTTON: Start/Restart the actual script !</li>
+                <li>STOP BUTTON: Stop the actual scripts !</li>
+                <li>UPDATE BUTTON: NOT YET IMPLEMENTED !</li>
+            </ul>
+            <span>If you encounter problems or something does not work, please contact us, SS-Core should not be touched in any way, if you do, you violate our policy No. 10.</span>
+            <button id="close-help">Close</button>
+        </div>
+    </div>
+    
+    <!-- Fereastra de Help/Instrucțiuni -->
+    <div id="update-window">
+        <div id="update-content">
+            <h2>UPDATE WARNING</h2>
+            <p>! When you update an asset, will download all main files from last version, can include config files or translate, please backup your actual config/changes file before update to the last version. This action can't be reversible !</p>
+            <span>!! ! - backup your actual version before update - ! !!</span>
+            <button id="close-update">Close</button>
+            <button id="accept-update">UPDATE</button>
+        </div>
+    </div>
+
+    <script src="js/js.js" type="text/javascript"></script>
+</body>
+</html>

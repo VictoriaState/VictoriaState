@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sixtyfour+Convergence&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+#MAIN {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 640px;
+    width: 840px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#top-section {
+    height: 30%;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;  /* Centrarea pe orizontală */
+    align-items: center;      /* Centrarea pe verticală */
+    background: url("../img/bk2.png") no-repeat center center;
+    background-size: cover;
+}
+
+#top-section .image-table2 {
+    width: 130px;             /* Dimensiunea fiecărei imagini/tabele */
+    height: 100px;
+    margin: 0 60px;           /* Spațiu între imagini */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-section .image-table {
+    width: 80px;             /* Dimensiunea fiecărei imagini/tabele */
+    height: 50px;
+    margin: 0 60px;           /* Spațiu între imagini */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-section .image-table img {
+    width: 100%;              /* Imaginea va ocupa toată dimensiunea containerului */
+    height: 100%;
+    padding: 30px;
+    object-fit: cover;         /* Asigură că imaginea se ajustează corespunzător */
+}
+
+#top-section .image-table2 img {
+    width: 100%;              /* Imaginea va ocupa toată dimensiunea containerului */
+    height: 100%;
+    padding: 30px;
+    object-fit: cover;         /* Asigură că imaginea se ajustează corespunzător */
+    border-radius: 10px;       /* Rotunjirea colțurilor imaginilor, dacă dorești */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Umbra imaginilor pentru un efect modern */
+}
+
+#bottom-section {
+    height: 70%;
+    overflow-y: auto; /* Scrollable section */
+    padding: 15px 60px 5px 60px;
+    box-sizing: border-box;
+      background: url("../img/bk.png");
+      background-repeat: cover;
+      background-size: 100% 100%; 
+}
+
+.script-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1), 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.script-container:hover {
+    background-color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.script-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+	font-size: 24px;
+}
+
+.script-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.script-buttons button {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+
+.button-start {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.button-stop {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.button-restart {
+    background-color: #f39c12;
+    color: white;
+}
+
+.button-start:hover {
+    background-color: #27ae60;
+}
+
+.button-stop:hover {
+    background-color: #c0392b;
+}
+
+.button-restart:hover {
+    background-color: #e67e22;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+#aws-logo-container {
+    position: absolute;
+    bottom: 0px;  /* Poziționare față de partea de jos */
+    left: -150px;  /* Inițial pornește în afara ecranului pe stânga */
+    width: 100px;  /* Dimensiunea imaginii */
+    height: auto;  /* Se păstrează proporțiile imaginii */
+}
+
+#aws-logo {
+    width: 100%;
+    height: auto;
+}
+
+/* Animația pentru mișcarea din stânga în dreapta și înapoi */
+@keyframes moveAWS {
+    0% {
+        left: -150px; /* Începe din afara ecranului pe stânga */
+    }
+    50% {
+        left: calc(100% - 150px); /* Se oprește aproape de marginea din dreapta */
+    }
+    100% {
+        left: -150px; /* Revine la poziția inițială */
+    }
+}
+
+.script-status {
+  float: right;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  color: red;  /* Culoare gri pentru status */
+  margin-bottom: 5px;
+  height: 20px;  /* Înălțimea fixă pentru a evita să sară elementele */
+}
+
+#aws-logo-container {
+    animation: moveAWS 15s linear infinite; /* Animația durează 15 secunde și este continuă */
+}
+
+#status-container {
+    display: flex;
+    align-items: center;    /* Centrează indicatorul și textul vertical */
+    margin-bottom: 10px;    /* Spațiu între status și input */
+}
+
+#status-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;  /* Inițial roșu (offline) */
+    margin-right: 10px;     /* Spațiu între bulină și text */
+}
+
+#status-text {
+    
+    color: black;
+    font-size: 18px;  /* Poți ajusta dimensiunea textului */
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+    text-align: center;
+}
+
+/* Stilizarea butonului "?" */
+#help-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+#help-button:hover {
+    background-color: #27ae60;
+}
+
+/* Fereastra de ajutor */
+#help-window {
+    display: none;  /* Ascuns inițial */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 1000;
+}
+
+#help-content {
+    text-align: center;
+}
+
+#help-content h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 24px;  
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+#help-content p {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 18px;  
+    color: #34495e;
+}
+
+#help-content span {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 18px;  
+    color: red;
+}
+
+#help-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#help-content ul li {
+    margin: 8px 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 16px;  
+    color: black;
+}
+
+/* Fereastra de update */
+#update-window {
+    display: none;  /* Ascuns inițial */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 1000;
+}
+
+#update-content {
+    text-align: center;
+}
+
+#update-content h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 28px;  
+    margin-top: 0;
+    color: red;
+}
+
+#update-content p {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 22px;  
+    color: black;
+}
+
+#update-content span {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 26px;  
+    color: red;
+}
+
+#update-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#update-content ul li {
+    margin: 8px 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 16px;  
+    color: black;
+}
+
+/* Butonul de închidere */
+#close-help {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#close-help:hover {
+    background-color: #c0392b;
+}
+
+/* Butonul de închidere */
+#close-update {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#close-update:hover {
+    background-color: #c0392b;
+}
+
+#accept-update {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#accept-update:hover {
+    background-color: #c0392b;
+}
+
+#search-section {
+    display: flex;
+    flex-direction: column; /* Elemente unul sub altul */
+    align-items: center;    /* Centrează pe orizontală */
+    background: transparent;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Bebas Neue", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
