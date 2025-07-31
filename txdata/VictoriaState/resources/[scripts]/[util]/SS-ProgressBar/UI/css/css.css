@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+html {
+    overflow: hidden;
+    font-family: 'Special Elite', cursive; 
+}
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+.MAIN {
+    display: block;
+    position: relative;
+    top: 80vh;
+    width: auto;
+    opacity: 0;
+}
+
+#canvas {
+    display: block;
+    margin: 50px auto;
+    width: 10vh;
+    height: 10vh;
+}
+
+.IMAGE {
+    height: 0.9vh;
+    width: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2.0vh;
+    margin: 0 auto;
+    border-radius: 15vh;
+}
+
+.IMAGE > i {
+    height: 4.5vh;
+    width: auto;
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vh;
+    border-radius: 15vh;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.TEXT {
+    font-family: 'Special Elite', cursive !important; 
+    height: 4.5vh;
+    width: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 9.5vh;
+    font-weight: bold;
+    font-size: 2vh;
+    border-radius: 15vh;
+    text-shadow: -1px -1px 1px rgba(255, 0, 0, 0.9), 1px 1px 1px rgba(0,0,0,.5);
+}
